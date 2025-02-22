@@ -3,7 +3,7 @@ import { JourneyCard } from "./JourneyCard";
 
 export const JourneySection: React.FC = () => {
   return (
-    <section className="bg-[rgba(91,116,191,1)] flex w-full flex-col items-center pl-5 pr-20 pt-[77px] pb-[163px] max-md:max-w-full max-md:pr-5 max-md:pb-[100px]">
+    <section id="journey" className="bg-[rgba(91,116,191,1)] flex w-full flex-col items-center pl-5 pr-20 pt-[77px] pb-[163px] max-md:max-w-full max-md:pr-5 max-md:pb-[100px]">
       <div className="flex w-[945px] max-w-full items-stretch gap-5 text-[52px] text-[rgba(243,242,240,1)] font-bold text-center leading-none flex-wrap justify-between max-md:text-[40px]">
         <img
           loading="lazy"

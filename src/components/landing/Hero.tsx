@@ -3,6 +3,11 @@ import React from "react";
 import { Testimonial } from "./Testimonial";
 
 export const Hero: React.FC = () => {
+  const scrollToJourney = () => {
+    const journeySection = document.getElementById("journey");
+    journeySection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="bg-[rgba(243,242,240,1)] z-10 flex mt-[-11px] w-full flex-col items-center justify-center px-20 py-[78px] max-md:max-w-full max-md:px-5">
       <div className="w-full max-w-[1200px] max-md:max-w-full">
@@ -21,7 +26,10 @@ export const Hero: React.FC = () => {
                   strategies, scaling operations, and turning chaos into growth
                   - one startup at a time.
                 </p>
-                <button className="bg-[rgba(91,116,191,1)] border flex items-stretch gap-[9px] overflow-hidden text-lg text-gray-100 font-normal leading-loose mt-[21px] px-5 py-[18px] rounded-[10px_10px_10px_0px] border-[rgba(243,242,240,1)] border-solid hover:bg-opacity-90 transition-colors w-fit">
+                <button 
+                  onClick={scrollToJourney}
+                  className="bg-[rgba(91,116,191,1)] border flex items-stretch gap-[9px] overflow-hidden text-lg text-gray-100 font-normal leading-loose mt-[21px] px-5 py-[18px] rounded-[10px_10px_10px_0px] border-[rgba(243,242,240,1)] border-solid hover:bg-opacity-90 transition-colors w-fit"
+                >
                   <span className="grow">Explore my journey</span>
                   <img
                     loading="lazy"
@@ -47,4 +55,3 @@ export const Hero: React.FC = () => {
     </section>
   );
 };
-
