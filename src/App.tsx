@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import FromFranceToValley from "./pages/stories/FromFranceToValley";
 import CustomerSuccess from "./pages/stories/CustomerSuccess";
 import StartupJourney from "./pages/stories/StartupJourney";
+import DigitalProjects from "./pages/stories/france/DigitalProjects";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/stories/france" element={<FromFranceToValley />} />
           <Route path="/stories/customer-success" element={<CustomerSuccess />} />
           <Route path="/stories/startup" element={<StartupJourney />} />
+          <Route path="/stories/france/digital-projects" element={<DigitalProjects />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
