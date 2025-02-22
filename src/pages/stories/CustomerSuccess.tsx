@@ -1,7 +1,9 @@
+
 import React from "react";
 import { ArrowLeft, Home } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
+import { ScrollToTop } from "@/components/common/ScrollToTop";
 
 export const CustomerSuccess = () => {
   const navigate = useNavigate();
@@ -94,6 +96,7 @@ export const CustomerSuccess = () => {
           </div>
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 };
