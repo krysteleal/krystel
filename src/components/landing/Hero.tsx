@@ -1,7 +1,6 @@
 
 import React from "react";
 import { Testimonial } from "./Testimonial";
-import { Waves } from "lucide-react";
 
 export const Hero: React.FC = () => {
   return (
@@ -14,12 +13,9 @@ export const Hero: React.FC = () => {
                 <h1 className="font-normal leading-loose">
                   Hello, I'm Krystel!
                 </h1>
-                <div className="relative">
-                  <h2 className="text-[rgba(23,26,31,1)] text-[64px] font-bold leading-[84px] mt-[13px] max-md:max-w-full max-md:text-[40px] max-md:leading-[58px]">
-                    Winning with Customer Success
-                  </h2>
-                  <Waves className="text-[rgba(91,116,191,1)] w-[574px] h-auto absolute -bottom-4 left-0" />
-                </div>
+                <h2 className="text-[rgba(23,26,31,1)] text-[64px] font-bold leading-[84px] mt-[13px] max-md:max-w-full max-md:text-[40px] max-md:leading-[58px]">
+                  Winning with Customer Success
+                </h2>
                 <p className="font-light leading-7 mr-[50px] mt-[41px] max-md:max-w-full max-md:mr-2.5 max-md:mt-10">
                   From freelancing to startups, I'm building customer-first
                   strategies, scaling operations, and turning chaos into growth
