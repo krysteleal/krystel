@@ -1,6 +1,6 @@
 
 import React from "react";
-import { ArrowLeft, Home } from "lucide-react";
+import { ArrowLeft, Home, ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 
@@ -79,6 +79,23 @@ const SiliconValleyMindset = () => {
               <li>Improve customer satisfaction scores by 25%</li>
               <li>Build more scalable onboarding processes</li>
             </ul>
+          </div>
+
+          <div className="mt-12 flex justify-between items-center pt-8 border-t border-[rgba(228,226,221,1)]">
+            <button
+              onClick={() => navigate("/stories/customer-success")}
+              className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
+            >
+              <ChevronLeft className="w-4 h-4" />
+              <span>Back to Customer Success</span>
+            </button>
+            <button
+              onClick={() => navigate("/stories/cs/learning")}
+              className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
+            >
+              <span>Learning Journey</span>
+              <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
       </div>

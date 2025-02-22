@@ -1,6 +1,5 @@
-
 import React from "react";
-import { ArrowLeft, Home } from "lucide-react";
+import { ArrowLeft, Home, ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 
@@ -103,6 +102,23 @@ const Learning = () => {
             </ul>
           </div>
         </div>
+      </div>
+
+      <div className="mt-12 flex justify-between items-center pt-8 border-t border-[rgba(228,226,221,1)]">
+        <button
+          onClick={() => navigate("/stories/cs/silicon-valley-mindset")}
+          className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
+        >
+          <ChevronLeft className="w-4 h-4" />
+          <span>Silicon Valley Mindset</span>
+        </button>
+        <button
+          onClick={() => navigate("/stories/cs/building-team")}
+          className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
+        >
+          <span>Building a Team</span>
+          <ChevronRight className="w-4 h-4" />
+        </button>
       </div>
     </div>
   );
