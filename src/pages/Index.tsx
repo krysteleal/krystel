@@ -1,12 +1,18 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import { Header } from "@/components/landing/Header";
+import { Hero } from "@/components/landing/Hero";
+import { JourneySection } from "@/components/landing/JourneySection";
+import { Footer } from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="bg-white shadow-[0px_3px_6px_rgba(18,15,40,0.12)] overflow-hidden">
+      <Header />
+      <main>
+        <Hero />
+        <JourneySection />
+      </main>
+      <Footer />
     </div>
   );
 };
