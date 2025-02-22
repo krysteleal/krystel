@@ -15,6 +15,9 @@ import SiliconValleyMindset from "./pages/stories/cs/SiliconValleyMindset";
 import Learning from "./pages/stories/cs/Learning";
 import BuildingTeam from "./pages/stories/cs/BuildingTeam";
 import References from "./pages/stories/cs/References";
+import Transition from "./pages/stories/startup/Transition";
+import Networking from "./pages/stories/startup/Networking";
+import ShowWork from "./pages/stories/startup/ShowWork";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +38,9 @@ const App = () => (
           <Route path="/stories/cs/learning" element={<Learning />} />
           <Route path="/stories/cs/building-team" element={<BuildingTeam />} />
           <Route path="/stories/cs/references" element={<References />} />
+          <Route path="/stories/startup/transition" element={<Transition />} />
+          <Route path="/stories/startup/networking" element={<Networking />} />
+          <Route path="/stories/startup/show-work" element={<ShowWork />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
