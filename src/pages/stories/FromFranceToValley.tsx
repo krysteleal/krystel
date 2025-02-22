@@ -1,10 +1,12 @@
-import React from "react";
-import { ArrowLeft, Home } from "lucide-react";
+
+import React, { useState } from "react";
+import { ArrowLeft, Home, ChevronDown, ChevronUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 
 export const FromFranceToValley = () => {
   const navigate = useNavigate();
+  const [isThoughtsExpanded, setIsThoughtsExpanded] = useState(false);
 
   const handleOptionClick = (path: string) => {
     navigate(path);
@@ -67,17 +69,38 @@ export const FromFranceToValley = () => {
               </p>
             </button>
 
-            <button
-              onClick={() => handleOptionClick("/stories/france/thoughts")}
-              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
-            >
-              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                What I was thinking at the time?
-              </h3>
-              <p className="text-[rgba(50,55,67,1)]">
-                Get insights into my mindset during these formative years.
-              </p>
-            </button>
+            <div className="border border-[rgba(228,226,221,1)] rounded-lg overflow-hidden">
+              <button
+                onClick={() => setIsThoughtsExpanded(!isThoughtsExpanded)}
+                className="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition-colors"
+              >
+                <span className="text-lg font-medium text-[rgba(91,116,191,1)]">
+                  What I was thinking at the time?
+                </span>
+                {isThoughtsExpanded ? (
+                  <ChevronUp className="w-5 h-5 text-[rgba(91,116,191,1)]" />
+                ) : (
+                  <ChevronDown className="w-5 h-5 text-[rgba(91,116,191,1)]" />
+                )}
+              </button>
+              {isThoughtsExpanded && (
+                <div className="p-6 bg-white border-t border-[rgba(228,226,221,1)]">
+                  <p className="text-[rgba(50,55,67,1)] leading-relaxed">
+                    During these pivotal years of transition, I was constantly evaluating 
+                    the potential impact of technology on global connectivity. The contrast 
+                    between European and American tech ecosystems fascinated me, and I saw 
+                    an opportunity to bridge these different approaches to innovation.
+                  </p>
+                  <p className="text-[rgba(50,55,67,1)] leading-relaxed mt-4">
+                    I believed that my multicultural background could bring a unique 
+                    perspective to Silicon Valley's fast-paced environment. The decision 
+                    to move wasn't just about career advancement—it was about being at 
+                    the intersection of technology, culture, and global business 
+                    transformation.
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
