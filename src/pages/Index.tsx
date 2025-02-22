@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
@@ -6,7 +7,7 @@ import { Footer } from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="bg-white shadow-[0px_3px_6px_rgba(18,15,40,0.12)] overflow-hidden">
+    <div className="bg-white shadow-[0px_3px_6px_rgba(18,15,40,0.12)] overflow-hidden max-w-[1440px] mx-auto">
       <Header />
       <main>
         <Hero />
@@ -18,3 +19,4 @@ const Index = () => {
 };
 
 export default Index;
+
