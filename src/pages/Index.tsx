@@ -12,8 +12,10 @@ const Index = () => {
         <Header />
         <main>
           <Hero />
-          <JourneySection />
         </main>
+      </div>
+      <JourneySection />
+      <div className="bg-white overflow-hidden max-w-[1440px] mx-auto">
         <Footer />
       </div>
     </div>
