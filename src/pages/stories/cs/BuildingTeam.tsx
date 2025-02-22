@@ -97,24 +97,56 @@ const BuildingTeam = () => {
               <li>Focus on scalable solutions</li>
             </ul>
           </div>
-        </div>
-      </div>
 
-      <div className="mt-12 flex justify-between items-center pt-8 border-t border-[rgba(228,226,221,1)]">
-        <button
-          onClick={() => navigate("/stories/cs/learning")}
-          className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-        >
-          <ChevronLeft className="w-4 h-4" />
-          <span>Learning Journey</span>
-        </button>
-        <button
-          onClick={() => navigate("/stories/cs/references")}
-          className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-        >
-          <span>References</span>
-          <ChevronRight className="w-4 h-4" />
-        </button>
+          <div className="mt-12 space-y-6">
+            <h2 className="text-2xl font-semibold text-[rgba(23,26,31,1)]">
+              What would you like to explore next?
+            </h2>
+            
+            <div className="space-y-4">
+              <button
+                onClick={() => navigate("/stories/cs/references")}
+                className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+              >
+                <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                  What are your Customer Success references?
+                </h3>
+                <p className="text-[rgba(50,55,67,1)]">
+                  Check out my recommended resources and network.
+                </p>
+              </button>
+
+              <button
+                onClick={() => navigate("/stories/cs/silicon-valley-mindset")}
+                className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+              >
+                <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                  How did the Silicon Valley mindset change the way you think about CS?
+                </h3>
+                <p className="text-[rgba(50,55,67,1)]">
+                  Circle back to learn about the Silicon Valley approach to Customer Success.
+                </p>
+              </button>
+            </div>
+          </div>
+
+          <div className="mt-12 flex justify-between items-center pt-8 border-t border-[rgba(228,226,221,1)]">
+            <button
+              onClick={() => navigate("/stories/cs/learning")}
+              className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
+            >
+              <ChevronLeft className="w-4 h-4" />
+              <span>Learning Journey</span>
+            </button>
+            <button
+              onClick={() => navigate("/stories/cs/references")}
+              className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
+            >
+              <span>References</span>
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

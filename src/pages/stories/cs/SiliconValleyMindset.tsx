@@ -81,6 +81,38 @@ const SiliconValleyMindset = () => {
             </ul>
           </div>
 
+          <div className="mt-12 space-y-6">
+            <h2 className="text-2xl font-semibold text-[rgba(23,26,31,1)]">
+              What would you like to learn next?
+            </h2>
+            
+            <div className="space-y-4">
+              <button
+                onClick={() => navigate("/stories/cs/learning")}
+                className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+              >
+                <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                  How did you learn about the Customer Success area?
+                </h3>
+                <p className="text-[rgba(50,55,67,1)]">
+                  Learn about my journey into Customer Success.
+                </p>
+              </button>
+
+              <button
+                onClick={() => navigate("/stories/cs/building-team")}
+                className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+              >
+                <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                  How do you build a CS team from scratch in a fast-growing startup?
+                </h3>
+                <p className="text-[rgba(50,55,67,1)]">
+                  Explore the process of building and scaling a CS team.
+                </p>
+              </button>
+            </div>
+          </div>
+
           <div className="mt-12 flex justify-between items-center pt-8 border-t border-[rgba(228,226,221,1)]">
             <button
               onClick={() => navigate("/stories/customer-success")}
