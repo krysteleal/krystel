@@ -26,9 +26,9 @@ const SiliconValleyMindset = () => {
               Before moving here, I had always been independent, resourceful, and curious. But something shifted when I started attending startup events, meeting founders, and seeing how businesses were built here.
             </p>
 
-            <h2 className="text-2xl font-semibold text-[rgba(23,26,31,1)] mt-8 mb-4">
+            <p className="mt-8">
               Here's what I learned:
-            </h2>
+            </p>
             
             <ul className="list-none space-y-8">
               <li>
@@ -67,14 +67,14 @@ const SiliconValleyMindset = () => {
             </button>
 
             <button
-              onClick={() => navigate("/stories/cs/building-team")}
+              onClick={() => navigate("/stories/france/silicon-valley")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                How do you build a CS team from scratch in a fast-growing startup?
+                When and why did you move to Silicon Valley?
               </h3>
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Explore the process of building and scaling a CS team.
+                Discover the story behind my decision to move to the Bay Area and build my career in the US.
               </p>
             </button>
           </div>
