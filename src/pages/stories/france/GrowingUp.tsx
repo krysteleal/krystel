@@ -23,10 +23,11 @@ export const GrowingUp = () => {
           </h1>
           
           <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)] mb-12">
-            The blend of French and Portuguese cultures shaped my perspective on 
-            technology, business, and innovation. This unique background provided me
-            with diverse insights that would later influence my approach to building
-            global products.
+            Growing up in two cultures gave me a unique perspective on adaptability, communication, and creativity - all of which later became essential in my career.
+            <br /><br />
+            France gave me a strong foundation in communication and media, especially through my studies at the Sorbonne University. It's where I learned how to analyze, structure, and present ideas - a skill that later helped me in startups when I had to turn chaotic information into clear strategies.
+            <br /><br />
+            Meanwhile, Portugal shaped my adaptability and ability to navigate uncertainty. Growing up there, I learned how to make the most of what's available, find creative solutions, and stay flexible when things don't go as planned.
           </p>
 
           <div className="space-y-4">
