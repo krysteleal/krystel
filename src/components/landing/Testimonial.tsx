@@ -31,7 +31,7 @@ const testimonials = [
 
 export const Testimonial: React.FC = () => {
   return (
-    <Carousel className="relative w-full">
+    <Carousel className="relative w-full" opts={{ loop: true }}>
       <CarouselContent>
         {testimonials.map((testimonial, index) => (
           <CarouselItem key={index}>
