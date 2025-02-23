@@ -27,8 +27,8 @@ const References = () => {
             
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg border border-[rgba(228,226,221,1)]">
-                <h3 className="text-xl font-medium text-[rgba(23,26,31,1)] mb-2">
-                  Key Books
+                <h3 className="text-xl font-medium text-[rgba(23,26,31,1)] mb-5">
+                  📚 Key Books
                 </h3>
                 <ul className="list-disc pl-6 space-y-4 font-normal">
                   <li>
@@ -90,8 +90,8 @@ const References = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg border border-[rgba(228,226,221,1)]">
-                <h3 className="text-xl font-medium text-[rgba(23,26,31,1)] mb-2">
-                  Industry Resources, Blogs and Podcasts That Changed My Perspective
+                <h3 className="text-xl font-medium text-[rgba(23,26,31,1)] mb-5">
+                  🌎 Industry Resources, Blogs and Podcasts
                 </h3>
                 <ul className="list-disc pl-6 space-y-4 font-normal">
                   <li>
@@ -158,7 +158,7 @@ const References = () => {
               </div>
 
               <div className="bg-white p-6 rounded-lg border border-[rgba(228,226,221,1)]">
-                <h3 className="text-xl font-medium text-[rgba(23,26,31,1)] mb-2">
+                <h3 className="text-xl font-medium text-[rgba(23,26,31,1)] mb-5">
                   💡 People Who Have Inspired Me
                 </h3>
                 <ul className="list-disc pl-6 space-y-4 font-normal">
@@ -236,43 +236,31 @@ const References = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold text-[rgba(23,26,31,1)] mt-8 mb-4">
-              Key Metrics & Frameworks
-            </h2>
-            
-            <ul className="list-disc pl-6 space-y-4">
-              <li>Customer Health Scoring</li>
-              <li>Net Revenue Retention (NRR)</li>
-              <li>Customer Lifetime Value (CLV)</li>
-              <li>Net Promoter Score (NPS)</li>
-              <li>Time to Value (TTV)</li>
-            </ul>
-          </div>
+            <div className="space-y-4 mt-12">
+              <button
+                onClick={() => navigate("/stories/customer-success")}
+                className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+              >
+                <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                  How did you learn about the Customer Success area?
+                </h3>
+                <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
+                  Learn about my journey into Customer Success.
+                </p>
+              </button>
 
-          <div className="space-y-4 mt-12">
-            <button
-              onClick={() => navigate("/stories/customer-success")}
-              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
-            >
-              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                How did you learn about the Customer Success area?
-              </h3>
-              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Learn about my journey into Customer Success.
-              </p>
-            </button>
-
-            <button
-              onClick={() => navigate("/stories/france/silicon-valley")}
-              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
-            >
-              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                When and why did you move to Silicon Valley?
-              </h3>
-              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Discover the story behind my decision to move to the Bay Area and build my career in the US.
-              </p>
-            </button>
+              <button
+                onClick={() => navigate("/stories/france/silicon-valley")}
+                className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+              >
+                <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                  When and why did you move to Silicon Valley?
+                </h3>
+                <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
+                  Discover the story behind my decision to move to the Bay Area and build my career in the US.
+                </p>
+              </button>
+            </div>
           </div>
         </div>
       </div>
