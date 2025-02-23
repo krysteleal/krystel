@@ -30,8 +30,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* Redirect old route to new route */}
+          {/* Redirect old routes to new routes */}
           <Route path="/stories/france" element={<Navigate to="/stories/europe" replace />} />
+          <Route path="/stories/france/growing-up" element={<Navigate to="/stories/europe/growing-up" replace />} />
+          <Route path="/stories/france/digital-projects" element={<Navigate to="/stories/europe/digital-projects" replace />} />
+          <Route path="/stories/france/silicon-valley" element={<Navigate to="/stories/europe/silicon-valley" replace />} />
           <Route path="/stories/europe" element={<FromFranceToValley />} />
           <Route path="/stories/customer-success" element={<CustomerSuccess />} />
           <Route path="/stories/startup" element={<StartupJourney />} />
