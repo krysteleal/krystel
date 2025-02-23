@@ -22,6 +22,12 @@ const testimonials = [
     image: "/lovable-uploads/a7b0aa75-71d5-4d1f-a314-abdda17ce6b1.png"
   },
   {
+    quote: "She crafted intentional and genuine relationships with not only the team but also our customers, really setting a gold standard for relationship building and maintenance. Krystel is a Swiss Army knife teammate, and will be an asset anywhere she goes.",
+    author: "Mandy Rogers",
+    company: "OneText",
+    image: "/lovable-uploads/b1eeabd4-d227-4860-b586-1461f39edfaf.png"
+  },
+  {
     quote: "Krystel brings a unique blend of technical expertise and customer empathy. She helped us build processes that scaled with our growth while maintaining the personal touch our customers love.",
     author: "Jason Lee",
     company: "Raycon Inc.",
