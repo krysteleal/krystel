@@ -11,12 +11,12 @@ export const Footer: React.FC = () => {
         alt="Logo"
       />
       <nav className="flex gap-3.5 my-auto">
-        <a href="#" aria-label="Social Link 1">
+        <a href="https://www.linkedin.com/in/krysteleal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/3399bd5edb4a27c23177c90e649c791bffac1ccac6ab5b76d8e018932afd131a?placeholderIfAbsent=true"
             className="aspect-[1] object-contain w-6 shrink-0"
-            alt="Social Icon 1"
+            alt="LinkedIn"
           />
         </a>
         <a href="#" aria-label="Social Link 2">
