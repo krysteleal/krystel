@@ -11,7 +11,7 @@ export const JourneySection: React.FC = () => {
             Explore My Journey
           </h2>
         </div>
-        <p className="text-white text-xl font-normal leading-[30px] text-center w-[943px] mt-[71px] max-md:max-w-full max-md:mt-10">
+        <p className="text-white text-lg font-light leading-[30px] text-center w-[943px] mt-[71px] max-md:max-w-full max-md:mt-10">
           From freelancing to startups, from Portugal to Silicon Valley - I didn't
           follow the traditional path into tech. Instead, I built my career by
           connecting with people, sharing my work, and taking on opportunities
