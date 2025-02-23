@@ -17,7 +17,7 @@ const SiliconValley = () => {
           </h1>
           
           <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)] mb-12">
-            Moving to Silicon Valley wasn't always part of my plan. Initially, I came to the Bay Area because of my husband's passion for exploring this ecosystem. At first, I saw it as an opportunity to finally visit San Francisco - a dream trip inspired by my love for the Beat Generation.
+            Moving to California wasn't always part of my plan. Initially, I came to the Bay Area because of my husband's passion for exploring this ecosystem. At first, I saw it as an opportunity to finally visit San Francisco - a dream trip inspired by my love for the Beat Generation.
             <br /><br />
             But <strong>Silicon Valley is one of those places that changes you the moment you start engaging with it</strong>.
             <br /><br />
