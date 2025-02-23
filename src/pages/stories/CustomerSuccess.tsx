@@ -19,50 +19,36 @@ const CustomerSuccess = () => {
           
           <div className="space-y-6 text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
             <p>
-              Customer Success is more than just support—it's a strategic function that
-              drives revenue, product adoption, and long-term customer relationships.
-              My approach to CS was shaped by working in high-growth startups and
-              experiencing firsthand how Silicon Valley companies scale.
+              When I first heard about Customer Success as a career, I had already been doing it for years without realizing it.
+            </p>
+
+            <p>
+              As a freelancer, I spent years helping brands with web development, SEO, and content strategy. I worked directly with brands, helping them with their web strategy, content, and SEO. But I wasn't just optimizing websites - I was helping businesses understand their customers better.
+            </p>
+
+            <p>
+              I became obsessed with understanding:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Why do customers stay? Why do they churn?</li>
+              <li>What makes them loyal to a brand or product?</li>
+              <li>How can companies ensure their users get long-term value?</li>
+            </ul>
+
+            <p>
+              At some point, I realized: I was already doing Customer Success - I just hadn't called it that yet.
+            </p>
+
+            <p>
+              I officially transitioned into Customer Success when I joined OneText as the first CS hire and second employee. But when I look back, I see that I had been preparing for this role for years - just without knowing what to call it.
+            </p>
+
+            <p>
+              Customer Success wasn't a career I chose - it was the natural extension of the work I had already been doing. And once I fully embraced it, I realized how powerful CS could be in driving growth, retention, and long-term business success.
             </p>
           </div>
 
           <div className="space-y-4 mt-12">
-            <button
-              onClick={() => navigate("/stories/cs/silicon-valley-mindset")}
-              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
-            >
-              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                How did the Silicon Valley mindset change the way you think about Customer Success?
-              </h3>
-              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Discover how Silicon Valley's unique approach influenced my CS philosophy.
-              </p>
-            </button>
-
-            <button
-              onClick={() => navigate("/stories/cs/learning")}
-              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
-            >
-              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                How did you learn about the Customer Success area?
-              </h3>
-              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Learn about my journey into Customer Success.
-              </p>
-            </button>
-
-            <button
-              onClick={() => navigate("/stories/cs/building-team")}
-              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
-            >
-              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                How do you build a CS team from scratch in a fast-growing startup?
-              </h3>
-              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Explore the process of building and scaling a CS team.
-              </p>
-            </button>
-
             <button
               onClick={() => navigate("/stories/cs/references")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
@@ -72,6 +58,18 @@ const CustomerSuccess = () => {
               </h3>
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
                 Check out my recommended resources and network.
+              </p>
+            </button>
+
+            <button
+              onClick={() => navigate("/stories/cs/silicon-valley-mindset")}
+              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+            >
+              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                How did the Silicon Valley mindset change the way you think?
+              </h3>
+              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
+                Discover how Silicon Valley's unique approach influenced my way of thinking
               </p>
             </button>
           </div>
