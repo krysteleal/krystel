@@ -8,7 +8,11 @@ export const DigitalProjects = () => {
   const navigate = useNavigate();
 
   const handleOptionClick = (path: string) => {
-    navigate(path);
+    if (path.startsWith('http')) {
+      window.open(path, '_blank');
+    } else {
+      navigate(path);
+    }
   };
 
   return (
@@ -40,26 +44,38 @@ export const DigitalProjects = () => {
 
           <div className="space-y-4">
             <button
-              onClick={() => handleOptionClick("/stories/startup")}
+              onClick={() => handleOptionClick("/stories/startup/transition")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                How did this lead to working in startups?
+                How did you transition from freelancing to startups?
               </h3>
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Discover how my early digital projects paved the way for my startup career.
+                Learn about my journey from freelancing to the startup world.
               </p>
             </button>
 
             <button
-              onClick={() => handleOptionClick("/stories/customer-success")}
+              onClick={() => handleOptionClick("/stories/france/silicon-valley")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                How did your early projects shape the way you build projects and scale teams?
+                When and why did you move to Silicon Valley?
               </h3>
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Learn how these experiences influenced my approach to team building and project scaling.
+                Discover the story behind my decision to move to the Bay Area and build my career in the US.
+              </p>
+            </button>
+
+            <button
+              onClick={() => handleOptionClick("https://www.linkedin.com/posts/krysteleal_you-learn-the-most-when-you-teach-and-share-activity-7267552780511264770-kbkt?utm_source=share&utm_medium=member_desktop&rcm=ACoAABISZsMBZgBuYWrEUIyF-rxLfClpsJKcj8s")}
+              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+            >
+              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                Why was the Nomadismo Digital Portugal project so important and representative of the "Show Your Work" mentality?
+              </h3>
+              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
+                Learn how sharing knowledge and building in public became a cornerstone of my career growth.
               </p>
             </button>
           </div>
