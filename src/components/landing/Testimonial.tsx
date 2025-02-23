@@ -51,8 +51,8 @@ export const Testimonial: React.FC = () => {
                   alt="Testimonial author"
                 />
               </div>
-              <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
-              <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
+              <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 border-none hover:bg-transparent [&>svg]:text-[#5b74bf]" variant="ghost" />
+              <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 border-none hover:bg-transparent [&>svg]:text-[#5b74bf]" variant="ghost" />
             </div>
           </CarouselItem>
         ))}
