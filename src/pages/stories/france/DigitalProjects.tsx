@@ -11,6 +11,7 @@ export const DigitalProjects = () => {
     if (path.startsWith('http')) {
       window.open(path, '_blank');
     } else {
+      window.scrollTo(0, 0);
       navigate(path);
     }
   };

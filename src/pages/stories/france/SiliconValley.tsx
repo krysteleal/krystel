@@ -7,6 +7,11 @@ import { NestedFooter } from "@/components/landing/NestedFooter";
 const SiliconValley = () => {
   const navigate = useNavigate();
 
+  const handleNavigate = (path: string) => {
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
+
   return (
     <div className="min-h-screen bg-[#F3F2F0] flex flex-col">
       <Header />
@@ -30,7 +35,7 @@ const SiliconValley = () => {
 
           <div className="space-y-4">
             <button
-              onClick={() => navigate("/stories/startup")}
+              onClick={() => handleNavigate("/stories/startup")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
@@ -42,7 +47,7 @@ const SiliconValley = () => {
             </button>
 
             <button
-              onClick={() => navigate("/stories/cs/silicon-valley-mindset")}
+              onClick={() => handleNavigate("/stories/cs/silicon-valley-mindset")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">

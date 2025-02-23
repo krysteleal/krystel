@@ -8,6 +8,7 @@ export const GrowingUp = () => {
   const navigate = useNavigate();
 
   const handleOptionClick = (path: string) => {
+    window.scrollTo(0, 0);
     navigate(path);
   };
 
