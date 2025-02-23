@@ -46,10 +46,10 @@ const SiliconValley = () => {
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                How did the Silicon Valley mindset change the way you think about Customer Success?
+                How has the Silicon Valley mindset changed your way of thinking?
               </h3>
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Discover how Silicon Valley's unique approach influenced my CS philosophy.
+                Discover how the Silicon Valley mindset of collaboration and openness transformed my approach to life and career
               </p>
             </button>
           </div>
