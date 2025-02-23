@@ -19,7 +19,7 @@ const SiliconValleyMindset = () => {
           
           <div className="space-y-6 text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
             <p>
-              Silicon Valley didn't just change where I lived - it changed how I think, work, and approach opportunities.
+              California didn't just change where I lived - it changed how I think, work, and approach opportunities.
             </p>
 
             <p>
