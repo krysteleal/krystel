@@ -1,6 +1,5 @@
 
 import React from "react";
-import { ArrowLeft, Home } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 import { NestedFooter } from "@/components/landing/NestedFooter";
@@ -40,7 +39,16 @@ const CustomerSuccess = () => {
             </p>
 
             <p>
-              I officially transitioned into Customer Success when I joined OneText as the first CS hire and second employee. But when I look back, I see that I had been preparing for this role for years - just without knowing what to call it.
+              I officially transitioned into Customer Success when{" "}
+              <a 
+                href="https://www.linkedin.com/posts/krysteleal_youll-wear-many-hats-at-a-startup-when-activity-7265091557391818753-LqNw?utm_source=share&utm_medium=member_desktop&rcm=ACoAABISZsMBZgBuYWrEUIyF-rxLfClpsJKcj8s"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[rgba(91,116,191,1)] hover:underline"
+              >
+                I joined OneText as the first CS hire
+              </a>
+              . But when I look back, I see that I had been preparing for this role for years - just without knowing what to call it.
             </p>
 
             <p>
@@ -71,23 +79,6 @@ const CustomerSuccess = () => {
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
                 Discover how Silicon Valley's unique approach influenced my way of thinking
               </p>
-            </button>
-          </div>
-
-          <div className="mt-12 flex justify-between items-center pt-8 border-t border-[rgba(228,226,221,1)]">
-            <button
-              onClick={() => navigate(-1)}
-              className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Back</span>
-            </button>
-            <button
-              onClick={() => navigate("/")}
-              className="text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-              aria-label="Go to homepage"
-            >
-              <Home className="w-5 h-5" />
             </button>
           </div>
         </div>
