@@ -22,7 +22,7 @@ export const FromFranceToValley = () => {
             From France to Silicon Valley
           </h1>
           
-          <p className="text-xl text-[rgba(50,55,67,1)] mb-12">
+          <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)] mb-12">
             My journey didn't start in Silicon Valley—it started in France and Portugal.
             From my first digital projects to eventually moving to the Bay Area, each
             step shaped the way I think about tech, business, and career growth.
@@ -36,7 +36,7 @@ export const FromFranceToValley = () => {
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
                 Tell me about your first digital projects
               </h3>
-              <p className="text-[rgba(50,55,67,1)]">
+              <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
                 Explore my early experiences with digital projects and how they shaped my career path.
               </p>
             </button>
@@ -48,7 +48,7 @@ export const FromFranceToValley = () => {
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
                 How did growing up in France & Portugal shape your career?
               </h3>
-              <p className="text-[rgba(50,55,67,1)]">
+              <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
                 Learn about the cultural influences that impacted my professional journey.
               </p>
             </button>
@@ -69,13 +69,13 @@ export const FromFranceToValley = () => {
               </button>
               {isThoughtsExpanded && (
                 <div className="p-6 bg-white border-t border-[rgba(228,226,221,1)]">
-                  <p className="text-[rgba(50,55,67,1)] leading-relaxed">
+                  <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
                     During these pivotal years of transition, I was constantly evaluating 
                     the potential impact of technology on global connectivity. The contrast 
                     between European and American tech ecosystems fascinated me, and I saw 
                     an opportunity to bridge these different approaches to innovation.
                   </p>
-                  <p className="text-[rgba(50,55,67,1)] leading-relaxed mt-4">
+                  <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)] mt-4">
                     I believed that my multicultural background could bring a unique 
                     perspective to Silicon Valley's fast-paced environment. The decision 
                     to move wasn't just about career advancement—it was about being at 
@@ -88,7 +88,7 @@ export const FromFranceToValley = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white">
+      <div className="bg-[#ecebe8]">
         <NestedFooter />
       </div>
     </div>
