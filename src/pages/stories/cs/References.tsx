@@ -7,6 +7,10 @@ import { NestedFooter } from "@/components/landing/NestedFooter";
 const References = () => {
   const navigate = useNavigate();
 
+  const scrollToJourney = () => {
+    window.location.href = "/#journey";
+  };
+
   return (
     <div className="min-h-screen bg-[#F3F2F0] flex flex-col">
       <Header />
@@ -236,30 +240,33 @@ const References = () => {
               </div>
             </div>
 
-            <div className="space-y-4 mt-12">
-              <button
-                onClick={() => navigate("/stories/customer-success")}
-                className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+            <div className="flex gap-4 mt-[100px] max-md:flex-col max-md:mt-[50px]">
+              <button 
+                onClick={scrollToJourney}
+                className="bg-[rgba(91,116,191,1)] border flex items-stretch gap-[9px] overflow-hidden text-lg text-gray-100 font-normal leading-loose px-5 py-[18px] rounded-[10px_10px_10px_0px] border-[rgba(243,242,240,1)] border-solid hover:bg-opacity-90 transition-colors w-fit"
               >
-                <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                  How did you learn about the Customer Success area?
-                </h3>
-                <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                  Learn about my journey into Customer Success.
-                </p>
+                <span className="grow">Explore my journey</span>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/82894084f0019eb830f699643383bbb0eee1982428be7ca26d0680fdbb410a2f?placeholderIfAbsent=true"
+                  className="aspect-[1] object-contain w-6 shrink-0 my-auto"
+                  alt="Arrow icon"
+                />
               </button>
-
-              <button
-                onClick={() => navigate("/stories/france/silicon-valley")}
-                className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+              <a 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-transparent border-[rgba(91,116,191,1)] text-[rgba(91,116,191,1)] border flex items-stretch gap-[9px] overflow-hidden text-lg font-normal leading-loose px-5 py-[18px] rounded-[10px_10px_10px_0px] border-solid hover:bg-[rgba(91,116,191,0.1)] transition-colors w-fit"
               >
-                <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                  When and why did you move to Silicon Valley?
-                </h3>
-                <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                  Discover the story behind my decision to move to the Bay Area and build my career in the US.
-                </p>
-              </button>
+                <span className="grow">Follow me on LinkedIn</span>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/82894084f0019eb830f699643383bbb0eee1982428be7ca26d0680fdbb410a2f?placeholderIfAbsent=true"
+                  className="aspect-[1] object-contain w-6 shrink-0 my-auto [filter:brightness(0)_saturate(100%)_invert(47%)_sepia(8%)_saturate(2687%)_hue-rotate(194deg)_brightness(91%)_contrast(87%)]"
+                  alt="Arrow icon"
+                />
+              </a>
             </div>
           </div>
         </div>
