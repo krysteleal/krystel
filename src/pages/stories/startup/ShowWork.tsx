@@ -7,6 +7,11 @@ import { NestedFooter } from "@/components/landing/NestedFooter";
 const ShowWork = () => {
   const navigate = useNavigate();
 
+  const handleNavigate = (path: string) => {
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
+
   return (
     <div className="min-h-screen bg-[#F3F2F0] flex flex-col">
       <Header />
@@ -66,7 +71,7 @@ const ShowWork = () => {
             
             <div className="space-y-4">
               <button
-                onClick={() => navigate("/stories/startup/transition")}
+                onClick={() => handleNavigate("/stories/startup/transition")}
                 className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
               >
                 <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
@@ -78,7 +83,7 @@ const ShowWork = () => {
               </button>
 
               <button
-                onClick={() => navigate("/stories/startup/networking")}
+                onClick={() => handleNavigate("/stories/startup/networking")}
                 className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
               >
                 <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
@@ -93,14 +98,14 @@ const ShowWork = () => {
 
           <div className="mt-12 flex justify-between items-center pt-8 border-t border-[rgba(228,226,221,1)]">
             <button
-              onClick={() => navigate("/stories/startup/networking")}
+              onClick={() => handleNavigate("/stories/startup/networking")}
               className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
             >
               <ChevronLeft className="w-4 h-4" />
               <span>Networking</span>
             </button>
             <button
-              onClick={() => navigate("/stories/startup")}
+              onClick={() => handleNavigate("/stories/startup")}
               className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
             >
               <span>Back to Startup Journey</span>

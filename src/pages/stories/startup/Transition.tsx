@@ -3,9 +3,15 @@ import { ArrowLeft, Home, ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 import { NestedFooter } from "@/components/landing/NestedFooter";
+import { ScrollToTop } from "@/components/common/ScrollToTop";
 
 const Transition = () => {
   const navigate = useNavigate();
+
+  const handleNavigate = (path: string) => {
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
 
   return (
     <div className="min-h-screen bg-[#F3F2F0] flex flex-col">
@@ -82,7 +88,7 @@ const Transition = () => {
             
             <div className="space-y-4">
               <button
-                onClick={() => navigate("/stories/startup/networking")}
+                onClick={() => handleNavigate("/stories/startup/networking")}
                 className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
               >
                 <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
@@ -94,7 +100,7 @@ const Transition = () => {
               </button>
 
               <button
-                onClick={() => navigate("/stories/startup/show-work")}
+                onClick={() => handleNavigate("/stories/startup/show-work")}
                 className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
               >
                 <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
@@ -128,6 +134,7 @@ const Transition = () => {
       <div className="bg-[#ecebe8]">
         <NestedFooter />
       </div>
+      <ScrollToTop />
     </div>
   );
 };

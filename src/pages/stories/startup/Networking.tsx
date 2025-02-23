@@ -3,9 +3,15 @@ import { ArrowLeft, Home, ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 import { NestedFooter } from "@/components/landing/NestedFooter";
+import { ScrollToTop } from "@/components/common/ScrollToTop";
 
 const Networking = () => {
   const navigate = useNavigate();
+
+  const handleNavigate = (path: string) => {
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
 
   return (
     <div className="min-h-screen bg-[#F3F2F0] flex flex-col">
@@ -66,7 +72,7 @@ const Networking = () => {
             
             <div className="space-y-4">
               <button
-                onClick={() => navigate("/stories/startup/show-work")}
+                onClick={() => handleNavigate("/stories/startup/show-work")}
                 className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
               >
                 <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
@@ -78,7 +84,7 @@ const Networking = () => {
               </button>
 
               <button
-                onClick={() => navigate("/stories/startup/transition")}
+                onClick={() => handleNavigate("/stories/startup/transition")}
                 className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
               >
                 <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
@@ -93,14 +99,14 @@ const Networking = () => {
 
           <div className="mt-12 flex justify-between items-center pt-8 border-t border-[rgba(228,226,221,1)]">
             <button
-              onClick={() => navigate("/stories/startup/transition")}
+              onClick={() => handleNavigate("/stories/startup/transition")}
               className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
             >
               <ChevronLeft className="w-4 h-4" />
               <span>Transition Story</span>
             </button>
             <button
-              onClick={() => navigate("/stories/startup/show-work")}
+              onClick={() => handleNavigate("/stories/startup/show-work")}
               className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
             >
               <span>Show Your Work</span>
@@ -112,6 +118,7 @@ const Networking = () => {
       <div className="bg-[#ecebe8]">
         <NestedFooter />
       </div>
+      <ScrollToTop />
     </div>
   );
 };
