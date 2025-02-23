@@ -3,7 +3,7 @@ import React from "react";
 
 export const Testimonial: React.FC = () => {
   return (
-    <div className="bg-white flex flex-col items-stretch pt-[31px] pb-[11px] px-5 rounded-[16px_16px_16px_0px] max-md:max-w-full">
+    <div className="bg-white flex flex-col items-stretch pt-[31px] pb-[11px] px-5 rounded-[40px_0px_40px_0px] max-md:max-w-full">
       <blockquote className="text-[rgba(50,55,67,1)] text-xs font-normal leading-5">
         "She is an amazing combination of both a problem solver and client
         advocate; I always felt like she had my back in any situation. If you
