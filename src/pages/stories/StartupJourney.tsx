@@ -30,38 +30,26 @@ const StartupJourney = () => {
 
           <div className="space-y-4">
             <button
-              onClick={() => navigate("/stories/startup/transition")}
+              onClick={() => navigate("/stories/cs/silicon-valley-mindset")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                How did you transition from freelancing to startups?
+                How did the Silicon Valley mindset change the way you think?
               </h3>
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Learn about my journey from freelancing to the startup world.
+                Discover how Silicon Valley's unique approach influenced my way of thinking
               </p>
             </button>
 
             <button
-              onClick={() => navigate("/stories/startup/networking")}
+              onClick={() => navigate("/stories/cs/learning")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                Why is networking so important?
+                How did you learn about the Customer Success area?
               </h3>
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Discover the power of building meaningful connections in the startup ecosystem.
-              </p>
-            </button>
-
-            <button
-              onClick={() => navigate("/stories/startup/show-work")}
-              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
-            >
-              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                What does 'show your work' really mean?
-              </h3>
-              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Understand the importance of visibility and building in public.
+                Learn about my journey into Customer Success.
               </p>
             </button>
           </div>
