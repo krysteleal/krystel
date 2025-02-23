@@ -1,4 +1,3 @@
-
 import React from "react";
 import { ArrowLeft, Home, ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -10,7 +9,7 @@ const Transition = () => {
   return (
     <div className="min-h-screen bg-[#F3F2F0]">
       <Header />
-      <div className="py-20 px-20 max-md:px-5">
+      <div className="py-20 max-md:py-5 px-20 max-md:px-5">
         <div className="flex justify-between items-center mb-8">
           <button
             onClick={() => navigate(-1)}
@@ -29,7 +28,7 @@ const Transition = () => {
         </div>
         
         <div className="max-w-[800px] mx-auto">
-          <h1 className="text-4xl font-bold text-[rgba(23,26,31,1)] mb-8">
+          <h1 className="text-4xl max-md:text-[1.6rem] font-bold text-[rgba(23,26,31,1)] mb-8">
             From Freelancing to Startups
           </h1>
           

@@ -14,9 +14,9 @@ export const GrowingUp = () => {
   return (
     <div className="min-h-screen bg-[#F3F2F0] flex flex-col">
       <Header />
-      <div className="py-20 px-20 max-md:px-5 bg-[#ecebe8] flex-grow">
+      <div className="py-20 max-md:py-5 px-20 max-md:px-5 bg-[#ecebe8] flex-grow">
         <div className="max-w-[800px] mx-auto">
-          <h1 className="text-4xl font-bold text-[rgba(23,26,31,1)] mb-8">
+          <h1 className="text-4xl max-md:text-[1.6rem] font-bold text-[rgba(23,26,31,1)] mb-8">
             Growing up in France and Portugal
           </h1>
           
