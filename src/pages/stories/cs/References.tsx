@@ -30,7 +30,7 @@ const References = () => {
                 <h3 className="text-xl font-medium text-[rgba(23,26,31,1)] mb-2">
                   Key Books
                 </h3>
-                <ul className="list-disc pl-6 space-y-4">
+                <ul className="list-disc pl-6 space-y-4 font-normal">
                   <li>
                     <a
                       href="https://amzn.to/4gVewn2"
@@ -91,25 +91,147 @@ const References = () => {
 
               <div className="bg-white p-6 rounded-lg border border-[rgba(228,226,221,1)]">
                 <h3 className="text-xl font-medium text-[rgba(23,26,31,1)] mb-2">
-                  Industry Resources
+                  Industry Resources, Blogs and Podcasts That Changed My Perspective
                 </h3>
-                <ul className="list-disc pl-6 space-y-4">
-                  <li>Gainsight's CS resources and methodologies</li>
-                  <li>Customer Success Association forums</li>
-                  <li>LinkedIn CS communities and thought leaders</li>
-                  <li>CS industry blogs and newsletters</li>
+                <ul className="list-disc pl-6 space-y-4 font-normal">
+                  <li>
+                    <a
+                      href="http://customersuccesscollective.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      Customer Success Collective
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.womenofcustomersuccess.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      Women In Customer Success Community
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.thecscafe.com?r=4v77d"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      The Customer Success Café Newsletter
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@allin"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      All-In Podcast
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://csinsider.co"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      CS Insider
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.vitally.io/blog"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      Vitally Blog
+                    </a>
+                  </li>
                 </ul>
               </div>
 
               <div className="bg-white p-6 rounded-lg border border-[rgba(228,226,221,1)]">
                 <h3 className="text-xl font-medium text-[rgba(23,26,31,1)] mb-2">
-                  Professional Development
+                  💡 People Who Have Inspired Me
                 </h3>
-                <ul className="list-disc pl-6 space-y-4">
-                  <li>CS certifications and training programs</li>
-                  <li>Industry conferences and webinars</li>
-                  <li>Peer networking groups</li>
-                  <li>Mentorship programs</li>
+                <ul className="list-disc pl-6 space-y-4 font-normal">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/angelaguedes/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      Angela Guedes
+                    </a>
+                  </li>
+                  <li>
+                    Anika Zubair's Newsletter (
+                    <a
+                      href="https://newsletter.thecustomersuccesspro.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      The Customer Success Pro's
+                    </a>
+                    )
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/daphnecostalopes/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      Daphne Costa Lopes
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/kristiserrano/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      Kristi Faltorusso
+                    </a>
+                    {" "}and{" "}
+                    <a
+                      href="https://www.linkedin.com/in/stijn-smet-%F0%9F%90%B3-330435a9/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      Stijn (Stino) Smet
+                    </a>
+                    , mostly via their "Customer Success Hotline"{" "}
+                    <a
+                      href="https://www.youtube.com/playlist?list=PLkK3r6B97-DGN_BW5j7pTTjolxzQIzwV3"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      podcast
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/markus-rentsch-customer-value-led-growth-for-saas/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      Markus Rentsch
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
