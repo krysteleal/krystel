@@ -14,6 +14,7 @@ export const JourneyCard: React.FC<JourneyCardProps> = ({
   const navigate = useNavigate();
 
   const handleStart = () => {
+    window.scrollTo(0, 0); // Scroll to top before navigation
     switch (title) {
       case "From Europe to Silicon Valley":
         navigate("/stories/france");
