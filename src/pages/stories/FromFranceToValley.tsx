@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -51,7 +50,7 @@ export const FromFranceToValley = () => {
                 Tell me about your first digital projects and freelance work
               </h3>
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Explore my early experiences with digital projects and how they shaped my career path.
+                Explore my early experiences with digital projects and how I became a freelancer.
               </p>
             </button>
 
