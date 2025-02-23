@@ -9,16 +9,16 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="bg-[rgba(243,242,240,1)] z-10 flex mt-[-11px] w-full flex-col items-center justify-center px-20 py-[78px] max-md:max-w-full max-md:px-5">
+    <section className="bg-[rgba(243,242,240,1)] z-10 flex mt-[-11px] w-full flex-col items-center justify-center px-20 py-[78px] max-md:mt-0 max-md:px-5 max-md:py-[30px]">
       <div className="w-full max-w-[1200px] max-md:max-w-full">
         <div className="max-md:max-w-full">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
             <div className="w-[58%] max-md:w-full max-md:ml-0">
-              <div className="flex flex-col self-stretch items-stretch text-lg text-[rgba(50,55,67,1)] my-auto max-md:max-w-full max-md:mt-10">
+              <div className="flex flex-col self-stretch items-stretch text-lg text-[rgba(50,55,67,1)] my-auto max-md:max-w-full max-md:mt-5">
                 <h1 className="font-normal leading-loose">
                   Hello, I'm Krystel!
                 </h1>
-                <h2 className="text-[rgba(23,26,31,1)] text-[64px] font-bold leading-[84px] mt-[13px] max-md:max-w-full max-md:text-[40px] max-md:leading-[58px]">
+                <h2 className="text-[rgba(23,26,31,1)] text-[64px] font-bold leading-[84px] mt-[13px] max-md:max-w-full max-md:text-[40px] max-md:leading-[48px]">
                   Winning with Customer Success
                 </h2>
                 <p className="font-light leading-7 mr-[50px] mt-[41px] max-md:max-w-full max-md:mr-2.5 max-md:mt-10">
@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
                   strategies, scaling operations, and turning chaos into growth
                   - one startup at a time.
                 </p>
-                <div className="flex gap-4 mt-[100px] max-md:flex-col">
+                <div className="flex gap-4 mt-[100px] max-md:flex-col max-md:mt-[97px]">
                   <button 
                     onClick={scrollToJourney}
                     className="bg-[rgba(91,116,191,1)] border flex items-stretch gap-[9px] overflow-hidden text-lg text-gray-100 font-normal leading-loose px-5 py-[18px] rounded-[10px_10px_10px_0px] border-[rgba(243,242,240,1)] border-solid hover:bg-opacity-90 transition-colors w-fit"
