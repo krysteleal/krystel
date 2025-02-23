@@ -35,8 +35,8 @@ export const Testimonial: React.FC = () => {
       <CarouselContent>
         {testimonials.map((testimonial, index) => (
           <CarouselItem key={index}>
-            <div className="bg-white flex flex-col items-stretch pt-[31px] pb-[11px] px-5 rounded-[40px_0px_40px_0px] max-md:max-w-full relative">
-              <blockquote className="text-[rgba(50,55,67,1)] text-xs font-normal leading-5">
+            <div className="bg-white flex flex-col items-stretch pt-[31px] pb-[11px] px-16 rounded-[40px_0px_40px_0px] max-md:max-w-full relative">
+              <blockquote className="text-[rgba(50,55,67,1)] text-xs font-normal leading-5 mx-4">
                 "{testimonial.quote}"
               </blockquote>
               <div className="flex items-stretch gap-[9px] text-[10px] text-[rgba(23,26,31,1)] leading-[1.6] mt-4 justify-end">
