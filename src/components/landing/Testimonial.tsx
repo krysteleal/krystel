@@ -35,7 +35,7 @@ export const Testimonial: React.FC = () => {
       <CarouselContent>
         {testimonials.map((testimonial, index) => (
           <CarouselItem key={index}>
-            <div className="bg-white flex flex-col items-stretch pt-[31px] pb-[11px] px-5 rounded-[40px_0px_40px_0px] max-md:max-w-full">
+            <div className="bg-white flex flex-col items-stretch pt-[31px] pb-[11px] px-5 rounded-[40px_0px_40px_0px] max-md:max-w-full relative">
               <blockquote className="text-[rgba(50,55,67,1)] text-xs font-normal leading-5">
                 "{testimonial.quote}"
               </blockquote>
@@ -51,12 +51,12 @@ export const Testimonial: React.FC = () => {
                   alt="Testimonial author"
                 />
               </div>
+              <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
+              <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12" />
-      <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12" />
     </Carousel>
   );
 };
