@@ -33,13 +33,13 @@ export const JourneySection: React.FC = () => {
             <div className="w-[33%] ml-5 max-md:w-full max-md:ml-0">
               <JourneyCard
                 title="Customer Success"
-                description="Learn how I built and scaled Customer Success teams from the ground up."
+                description="Discover my thoughts on how Customer Success contributes to startups and the value it brings to businesses."
               />
             </div>
             <div className="w-[33%] ml-5 max-md:w-full max-md:ml-0">
               <JourneyCard
                 title="Startup Journey"
-                description="Experience my transition from freelancing to tech startups."
+                description="Discover how I transitioned from being a freelancer to working with and for tech startups."
               />
             </div>
           </div>
