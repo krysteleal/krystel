@@ -26,7 +26,7 @@ export const JourneySection: React.FC = () => {
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
             <div className="w-[33%] max-md:w-full max-md:ml-0">
               <JourneyCard
-                title="From France to Silicon Valley"
+                title="From Europe to Silicon Valley"
                 description="Follow my journey from growing up in France and Portugal to building a career in tech."
               />
             </div>

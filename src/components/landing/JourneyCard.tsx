@@ -15,7 +15,7 @@ export const JourneyCard: React.FC<JourneyCardProps> = ({
 
   const handleStart = () => {
     switch (title) {
-      case "From France to Silicon Valley":
+      case "From Europe to Silicon Valley":
         navigate("/stories/france");
         break;
       case "Customer Success":
