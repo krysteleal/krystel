@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export const Testimonial: React.FC = () => {
@@ -9,7 +10,7 @@ export const Testimonial: React.FC = () => {
         need to provide best-in-class care to your audience or customers,
         Krystel is the answer."
       </blockquote>
-      <div className="flex items-stretch gap-[9px] text-[10px] text-[rgba(23,26,31,1)] leading-[1.6] mt-4 max-md:mr-2">
+      <div className="flex items-stretch gap-[9px] text-[10px] text-[rgba(23,26,31,1)] leading-[1.6] mt-4 justify-end">
         <div className="flex flex-col items-stretch">
           <cite className="font-bold not-italic">Jason Lee</cite>
           <div className="font-normal">Raycon Inc.</div>
