@@ -70,9 +70,9 @@ export const FromFranceToValley = () => {
             <div className="border border-[rgba(228,226,221,1)] rounded-lg overflow-hidden">
               <button
                 onClick={() => setIsThoughtsExpanded(!isThoughtsExpanded)}
-                className="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition-colors"
+                className="w-full flex items-center justify-between p-6 bg-white hover:bg-gray-50 transition-colors"
               >
-                <span className="text-lg font-medium text-[rgba(91,116,191,1)]">
+                <span className="text-lg font-semibold text-[rgba(91,116,191,1)]">
                   💡 What I was thinking at the time?
                 </span>
                 {isThoughtsExpanded ? (
