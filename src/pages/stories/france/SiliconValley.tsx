@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { ArrowLeft, Home, ChevronDown, ChevronUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -18,11 +19,42 @@ const SiliconValley = () => {
           </h1>
           
           <p className="text-xl text-[rgba(50,55,67,1)] mb-12">
-            The decision to move to Silicon Valley wasn't just about career advancement—it was about 
-            being at the intersection of technology, culture, and global business transformation. Here's my story.
+            Moving to Silicon Valley wasn't always part of my plan. Initially, I came to the Bay Area because of my husband's passion for exploring this ecosystem. At first, I saw it as an opportunity to finally visit San Francisco - a dream trip inspired by my love for the Beat Generation.
+            <br /><br />
+            But <strong>Silicon Valley is one of those places that changes you the moment you start engaging with it</strong>.
+            <br /><br />
+            I started attending startup events, meeting founders, and immersing myself in the ecosystem. I saw how quickly ideas turned into companies, how ambitious people surrounded themselves with others who pushed them forward. The energy was contagious.
+            <br /><br />
+            As someone who had been freelancing for years and working remotely, being here changed my perspective on growth, networking, and career opportunities. I realized that this was the best place to take my career to the next level.
+            <br /><br />
+            So, what started as curiosity became a long-term commitment to being part of this ecosystem. I knew: I wanted to be here.
           </p>
 
           <div className="space-y-4">
+            <button
+              onClick={() => navigate("/stories/startup/transition")}
+              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+            >
+              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                How did you transition from freelancing to startups?
+              </h3>
+              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
+                Learn about my journey from freelancing to the startup world.
+              </p>
+            </button>
+
+            <button
+              onClick={() => navigate("/stories/cs/silicon-valley-mindset")}
+              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+            >
+              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                How did the Silicon Valley mindset change the way you think about Customer Success?
+              </h3>
+              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
+                Discover how Silicon Valley's unique approach influenced my CS philosophy.
+              </p>
+            </button>
+
             <div className="border border-[rgba(228,226,221,1)] rounded-lg overflow-hidden">
               <button
                 onClick={() => setIsThoughtsExpanded(!isThoughtsExpanded)}
