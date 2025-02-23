@@ -39,12 +39,18 @@ export const Footer: React.FC = () => {
             alt="X (Twitter) Icon"
           />
         </a>
-        <a href="#" aria-label="Social Link 3" className="flex items-center">
+        <a 
+          href="https://www.instagram.com/krysteleal/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram Profile"
+          className="flex items-center"
+        >
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6f26b7f448b493a4d7a0794968e50e8b2a0faa71393bdab2686f4100858de3c8?placeholderIfAbsent=true"
             className="aspect-[1] object-contain w-6 shrink-0"
-            alt="Social Icon 3"
+            alt="Instagram Icon"
           />
         </a>
       </nav>
