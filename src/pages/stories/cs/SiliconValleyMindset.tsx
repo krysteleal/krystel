@@ -55,7 +55,7 @@ const SiliconValleyMindset = () => {
 
           <div className="space-y-4 mt-12">
             <button
-              onClick={() => navigate("/stories/cs/learning")}
+              onClick={() => navigate("/stories/customer-success")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
