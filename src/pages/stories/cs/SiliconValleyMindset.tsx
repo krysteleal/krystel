@@ -90,23 +90,6 @@ const SiliconValleyMindset = () => {
               </p>
             </button>
           </div>
-
-          <div className="mt-12 flex justify-between items-center pt-8 border-t border-[rgba(228,226,221,1)]">
-            <button
-              onClick={() => navigate("/stories/customer-success")}
-              className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-            >
-              <ChevronLeft className="w-4 h-4" />
-              <span>Back to Customer Success</span>
-            </button>
-            <button
-              onClick={() => navigate("/stories/cs/learning")}
-              className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-            >
-              <span>Learning Journey</span>
-              <ChevronRight className="w-4 h-4" />
-            </button>
-          </div>
         </div>
       </div>
       <div className="bg-[#ecebe8]">
