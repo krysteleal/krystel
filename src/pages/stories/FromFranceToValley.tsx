@@ -36,7 +36,7 @@ export const FromFranceToValley = () => {
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                How did growing up in France & Portugal shape your career?
+                How did growing up in France and Portugal shape your career?
               </h3>
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
                 Learn about the cultural influences that impacted my professional journey.
