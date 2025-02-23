@@ -1,7 +1,6 @@
 
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { ExternalLink } from "lucide-react";
 import { Header } from "@/components/landing/Header";
 import { NestedFooter } from "@/components/landing/NestedFooter";
 
@@ -40,7 +39,7 @@ export const DigitalProjects = () => {
             <br /><br />
             By 2016, after two years of working as a freelancer, I decided to share what I had learned and was still learning. That's when I launched Nomadismo Digital Portugal - the first Portuguese blog dedicated to remote work and freelancing.
             <br /><br />
-            That project would change my life forever.
+            That project would change my life forever. <a href="https://www.linkedin.com/posts/krysteleal_you-learn-the-most-when-you-teach-and-share-activity-7267552780511264770-kbkt/" className="text-[rgba(91,116,191,1)] hover:underline font-bold border-b border-dotted border-[rgba(91,116,191,1)]" target="_blank" rel="noopener noreferrer">Why?</a>
           </p>
 
           <div className="space-y-4">
@@ -66,15 +65,6 @@ export const DigitalProjects = () => {
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
                 Discover the story behind my decision to move to the Bay Area and build my career in the US.
               </p>
-            </button>
-
-            <button
-              onClick={() => handleOptionClick("https://www.linkedin.com/posts/krysteleal_you-learn-the-most-when-you-teach-and-share-activity-7267552780511264770-kbkt?utm_source=share&utm_medium=member_desktop&rcm=ACoAABISZsMBZgBuYWrEUIyF-rxLfClpsJKcj8s")}
-              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
-            >
-              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                Why was the Nomadismo Digital Portugal project so important and representative of the "Show Your Work" mentality <ExternalLink className="inline w-4 h-4 ml-1" />
-              </h3>
             </button>
           </div>
         </div>
