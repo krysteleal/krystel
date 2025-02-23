@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowLeft, Home, ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 
@@ -15,23 +15,6 @@ export const FromFranceToValley = () => {
     <div className="min-h-screen bg-[#F3F2F0]">
       <Header />
       <div className="py-20 px-20 max-md:px-5 bg-[#ecebe8]">
-        <div className="flex justify-between items-center mb-8">
-          <button
-            onClick={() => navigate(-1)}
-            className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Back</span>
-          </button>
-          <button
-            onClick={() => navigate("/")}
-            className="text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-            aria-label="Go to homepage"
-          >
-            <Home className="w-5 h-5" />
-          </button>
-        </div>
-        
         <div className="max-w-[800px] mx-auto">
           <h1 className="text-4xl font-bold text-[rgba(23,26,31,1)] mb-8">
             From France to Silicon Valley

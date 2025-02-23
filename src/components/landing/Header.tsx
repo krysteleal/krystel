@@ -1,8 +1,13 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { ArrowLeft, Home } from "lucide-react";
 
 export const Header: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isIndexPage = location.pathname === "/";
+
   return (
     <header className="bg-[rgba(228,226,221,0.44)] flex w-full items-stretch gap-5 flex-wrap justify-between px-20 py-[39px] max-md:max-w-full max-md:px-5">
       <Link to="/" aria-label="Go to homepage">
@@ -13,6 +18,24 @@ export const Header: React.FC = () => {
           alt="Logo"
         />
       </Link>
+      {!isIndexPage && (
+        <nav className="flex items-center gap-4">
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            <span>Back</span>
+          </button>
+          <button
+            onClick={() => navigate("/")}
+            className="text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
+            aria-label="Go to homepage"
+          >
+            <Home className="w-5 h-5" />
+          </button>
+        </nav>
+      )}
     </header>
   );
 };
