@@ -26,12 +26,6 @@ const testimonials = [
     author: "Mandy Rogers",
     company: "OneText",
     image: "/lovable-uploads/b1eeabd4-d227-4860-b586-1461f39edfaf.png"
-  },
-  {
-    quote: "Krystel brings a unique blend of technical expertise and customer empathy. She helped us build processes that scaled with our growth while maintaining the personal touch our customers love.",
-    author: "Jason Lee",
-    company: "Raycon Inc.",
-    image: "https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/9f3b8b7dbb78f8087b2e95b06b45374b88d4abaef399f4c7c2873a25ad90187d"
   }
 ];
 
