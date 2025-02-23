@@ -38,7 +38,7 @@ export const FromFranceToValley = () => {
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
                 How did growing up in France & Portugal shape your career?
               </h3>
-              <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
+              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
                 Learn about the cultural influences that impacted my professional journey.
               </p>
             </button>
@@ -50,7 +50,7 @@ export const FromFranceToValley = () => {
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
                 Tell me about your first digital projects and freelance work
               </h3>
-              <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
+              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
                 Explore my early experiences with digital projects and how they shaped my career path.
               </p>
             </button>
@@ -62,7 +62,7 @@ export const FromFranceToValley = () => {
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
                 When and why did you move to Silicon Valley?
               </h3>
-              <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
+              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
                 Discover the story behind my decision to move to the Bay Area and build my career in the US.
               </p>
             </button>
@@ -73,7 +73,7 @@ export const FromFranceToValley = () => {
                 className="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition-colors"
               >
                 <span className="text-lg font-medium text-[rgba(91,116,191,1)]">
-                  What I was thinking at the time?
+                  💡 What I was thinking at the time?
                 </span>
                 {isThoughtsExpanded ? (
                   <ChevronUp className="w-5 h-5 text-[rgba(91,116,191,1)]" />
