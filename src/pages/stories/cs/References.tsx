@@ -1,5 +1,5 @@
+
 import React from "react";
-import { ArrowLeft, Home, ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 import { NestedFooter } from "@/components/landing/NestedFooter";
@@ -11,30 +11,13 @@ const References = () => {
     <div className="min-h-screen bg-[#F3F2F0] flex flex-col">
       <Header />
       <div className="py-20 max-md:py-5 px-20 max-md:px-5 bg-[#ecebe8] flex-grow">
-        <div className="flex justify-between items-center mb-8">
-          <button
-            onClick={() => navigate(-1)}
-            className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Back</span>
-          </button>
-          <button
-            onClick={() => navigate("/")}
-            className="text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-            aria-label="Go to homepage"
-          >
-            <Home className="w-5 h-5" />
-          </button>
-        </div>
-        
         <div className="max-w-[800px] mx-auto">
           <h1 className="text-4xl max-md:text-[1.6rem] font-bold text-[rgba(23,26,31,1)] mb-8">
             Customer Success References
           </h1>
           
-          <div className="space-y-6 text-[rgba(50,55,67,1)]">
-            <p className="text-xl">
+          <div className="space-y-6 text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
+            <p>
               My CS knowledge and expertise have been shaped by various resources, 
               industry leaders, and communities. Here are the key references that have 
               influenced my approach to Customer Success.
@@ -93,6 +76,32 @@ const References = () => {
               <li>Net Promoter Score (NPS)</li>
               <li>Time to Value (TTV)</li>
             </ul>
+          </div>
+
+          <div className="space-y-4 mt-12">
+            <button
+              onClick={() => navigate("/stories/customer-success")}
+              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+            >
+              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                How did you learn about the Customer Success area?
+              </h3>
+              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
+                Learn about my journey into Customer Success.
+              </p>
+            </button>
+
+            <button
+              onClick={() => navigate("/stories/france/silicon-valley")}
+              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+            >
+              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                When and why did you move to Silicon Valley?
+              </h3>
+              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
+                Discover the story behind my decision to move to the Bay Area and build my career in the US.
+              </p>
+            </button>
           </div>
         </div>
       </div>
