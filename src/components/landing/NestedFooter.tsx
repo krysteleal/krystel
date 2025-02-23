@@ -3,7 +3,7 @@ import React from "react";
 
 export const NestedFooter: React.FC = () => {
   return (
-    <footer className="bg-[rgba(228,226,221,0.44)] flex w-full items-stretch gap-5 flex-wrap justify-end px-20 py-[39px] max-md:px-5">
+    <footer className="bg-[#ecebe8] flex w-full items-stretch gap-5 flex-wrap justify-end px-20 py-[39px] max-md:px-5">
       <nav className="flex gap-3.5 my-auto items-center">
         <a 
           href="https://www.linkedin.com/in/krysteleal/"
