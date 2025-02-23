@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 import { NestedFooter } from "@/components/landing/NestedFooter";
+import { ScrollToTop } from "@/components/common/ScrollToTop";
 
 export const GrowingUp = () => {
   const navigate = useNavigate();
@@ -59,6 +60,7 @@ export const GrowingUp = () => {
       <div className="bg-[#ecebe8]">
         <NestedFooter />
       </div>
+      <ScrollToTop />
     </div>
   );
 };

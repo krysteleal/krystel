@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 import { NestedFooter } from "@/components/landing/NestedFooter";
+import { ScrollToTop } from "@/components/common/ScrollToTop";
 
 const SiliconValley = () => {
   const navigate = useNavigate();
@@ -63,6 +64,7 @@ const SiliconValley = () => {
       <div className="bg-[#ecebe8]">
         <NestedFooter />
       </div>
+      <ScrollToTop />
     </div>
   );
 };

@@ -1,7 +1,9 @@
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
 import { NestedFooter } from "@/components/landing/NestedFooter";
+import { ScrollToTop } from "@/components/common/ScrollToTop";
 
 const CustomerSuccess = () => {
   const navigate = useNavigate();
@@ -90,6 +92,7 @@ const CustomerSuccess = () => {
       <div className="bg-[#ecebe8]">
         <NestedFooter />
       </div>
+      <ScrollToTop />
     </div>
   );
 };
