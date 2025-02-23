@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { ArrowLeft, Home, ChevronDown, ChevronUp } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -15,7 +14,7 @@ export const FromFranceToValley = () => {
   return (
     <div className="min-h-screen bg-[#F3F2F0]">
       <Header />
-      <div className="py-20 px-20 max-md:px-5">
+      <div className="py-20 px-20 max-md:px-5 bg-[#ecebe8]">
         <div className="flex justify-between items-center mb-8">
           <button
             onClick={() => navigate(-1)}
