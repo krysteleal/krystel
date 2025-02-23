@@ -39,7 +39,7 @@ export const DigitalProjects = () => {
             <br /><br />
             By 2016, after two years of working as a freelancer, I decided to share what I had learned and was still learning. That's when I launched Nomadismo Digital Portugal - the first Portuguese blog dedicated to remote work and freelancing.
             <br /><br />
-            That project would change my life forever. <a href="https://www.linkedin.com/posts/krysteleal_you-learn-the-most-when-you-teach-and-share-activity-7267552780511264770-kbkt/" className="text-[rgba(91,116,191,1)] hover:underline font-bold border-b border-dotted border-[rgba(91,116,191,1)]" target="_blank" rel="noopener noreferrer">Why?</a>
+            That project would change my life forever. <a href="https://www.linkedin.com/posts/krysteleal_you-learn-the-most-when-you-teach-and-share-activity-7267552780511264770-kbkt/" className="text-[rgba(91,116,191,1)] hover:underline font-bold border-b border-dotted border-[rgba(91,116,191,1)] text-xs" target="_blank" rel="noopener noreferrer">Why?</a>
           </p>
 
           <div className="space-y-4">
