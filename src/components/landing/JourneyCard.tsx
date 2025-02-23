@@ -32,7 +32,7 @@ export const JourneyCard: React.FC<JourneyCardProps> = ({
       <h3 className="text-[rgba(91,116,191,1)] text-lg font-bold leading-loose">
         {title}
       </h3>
-      <p className="text-[rgba(50,55,67,1)] leading-5 mt-[11px]">
+      <p className="text-[rgba(50,55,67,1)] text-[0.875rem] font-[350] leading-5 mt-[11px]">
         {description}
       </p>
       <button 
