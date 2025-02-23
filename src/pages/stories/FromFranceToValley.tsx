@@ -30,18 +30,6 @@ export const FromFranceToValley = () => {
 
           <div className="space-y-4">
             <button
-              onClick={() => handleOptionClick("/stories/france/digital-projects")}
-              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
-            >
-              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                Tell me about your first digital projects
-              </h3>
-              <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
-                Explore my early experiences with digital projects and how they shaped my career path.
-              </p>
-            </button>
-
-            <button
               onClick={() => handleOptionClick("/stories/france/growing-up")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
@@ -50,6 +38,30 @@ export const FromFranceToValley = () => {
               </h3>
               <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
                 Learn about the cultural influences that impacted my professional journey.
+              </p>
+            </button>
+
+            <button
+              onClick={() => handleOptionClick("/stories/france/digital-projects")}
+              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+            >
+              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                Tell me about your first digital projects and freelance work
+              </h3>
+              <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
+                Explore my early experiences with digital projects and how they shaped my career path.
+              </p>
+            </button>
+
+            <button
+              onClick={() => handleOptionClick("/stories/france/silicon-valley")}
+              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
+            >
+              <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
+                When and why did you move to Silicon Valley?
+              </h3>
+              <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
+                Discover the story behind my decision to move to the Bay Area and build my career there.
               </p>
             </button>
 
