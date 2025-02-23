@@ -13,19 +13,17 @@ const References = () => {
       <div className="py-20 max-md:py-5 px-20 max-md:px-5 bg-[#ecebe8] flex-grow">
         <div className="max-w-[800px] mx-auto">
           <h1 className="text-4xl max-md:text-[1.6rem] font-bold text-[rgba(23,26,31,1)] mb-8">
-            Customer Success References
+            The Books, People and Resources That Shaped My Journey
           </h1>
           
           <div className="space-y-6 text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
             <p>
-              My CS knowledge and expertise have been shaped by various resources, 
-              industry leaders, and communities. Here are the key references that have 
-              influenced my approach to Customer Success.
+              No career path is built in isolation - along the way, I've learned from incredible minds across technology, entrepreneurship, innovation, startups, and customer success.
             </p>
             
-            <h2 className="text-2xl font-semibold text-[rgba(23,26,31,1)] mt-8 mb-4">
-              Essential Reading
-            </h2>
+            <p>
+              From books that shaped how I think about growth to the people and podcasts that continue to challenge my perspective, this is a collection of resources that have influenced my journey. Whether you're building a startup, scaling a team, or rethinking how businesses grow, I hope you find something valuable here!
+            </p>
             
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg border border-[rgba(228,226,221,1)]">
@@ -33,10 +31,61 @@ const References = () => {
                   Key Books
                 </h3>
                 <ul className="list-disc pl-6 space-y-4">
-                  <li>"Customer Success" by Nick Mehta, Dan Steinman, and Lincoln Murphy</li>
-                  <li>"The Customer Success Professional's Handbook" by Ashvin Vaidyanathan</li>
-                  <li>"Farm Don't Hunt" by Guy Nirpaz</li>
-                  <li>"Chief Customer Officer 2.0" by Jeanne Bliss</li>
+                  <li>
+                    <a
+                      href="https://amzn.to/4gVewn2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness"
+                    </a>{" "}
+                    by Eric Jorgenson
+                  </li>
+                  <li>
+                    <a
+                      href="https://amzn.to/4kabhei"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered"
+                    </a>{" "}
+                    by Austin Kleon
+                  </li>
+                  <li>
+                    <a
+                      href="https://amzn.to/4hGKnct"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      "The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution"
+                    </a>{" "}
+                    by Walter Isaacson
+                  </li>
+                  <li>
+                    <a
+                      href="https://amzn.to/3Qw4aiJ"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      "Deep Work: Rules for Focused Success in a Distracted World"
+                    </a>{" "}
+                    by Cal Newport
+                  </li>
+                  <li>
+                    <a
+                      href="https://amzn.to/41sKdjm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(91,116,191,1)] hover:underline"
+                    >
+                      "The Startup's Guide to Customer Success: How to Champion the Customer at Your Company"
+                    </a>{" "}
+                    by Jennifer Chiang
+                  </li>
                 </ul>
               </div>
 
