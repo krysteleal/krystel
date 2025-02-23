@@ -19,53 +19,41 @@ const SiliconValleyMindset = () => {
           
           <div className="space-y-6 text-lg font-light leading-7 text-[rgba(50,55,67,1)]">
             <p>
-              The Silicon Valley approach to Customer Success fundamentally changed my perspective. 
-              Instead of viewing CS as a reactive support function, I learned to see it as a 
-              proactive driver of growth.
+              Silicon Valley didn't just change where I lived - it changed how I think, work, and approach opportunities.
             </p>
-            
+
+            <p>
+              Before moving here, I had always been independent, resourceful, and curious. But something shifted when I started attending startup events, meeting founders, and seeing how businesses were built here.
+            </p>
+
             <h2 className="text-2xl font-semibold text-[rgba(23,26,31,1)] mt-8 mb-4">
-              Key Mindset Shifts
+              Here's what I learned:
             </h2>
             
-            <ul className="list-disc pl-6 space-y-4">
+            <ul className="list-none space-y-8">
               <li>
-                <strong>Growth-Driven:</strong> CS teams are strategic partners that help shape 
-                product development, drive adoption, and directly impact revenue.
+                <p className="mb-2">
+                  <strong>Failure isn't something to fear - it's a step toward success.</strong> In Silicon Valley, failure isn't seen as a personal loss - it's seen as a learning experience. People don't dwell on mistakes; they adapt, pivot, and try again. That gave me the confidence to take bigger risks.
+                </p>
               </li>
               <li>
-                <strong>Data-Focused:</strong> Emphasis on metrics like Time-to-Value, Net Revenue 
-                Retention, and Product-Led Growth indicators.
+                <p className="mb-2">
+                  <strong>Speed beats perfection.</strong> I used to spend too much time making things <em>just right</em>. In this ecosystem, I saw companies launch, learn, and iterate so quickly that perfection was an afterthought. Execution mattered more than endless planning and perfectionism.
+                </p>
               </li>
               <li>
-                <strong>Scalable Processes:</strong> Building systems that enable customer success 
-                while maintaining efficiency as the business grows.
-              </li>
-              <li>
-                <strong>Proactive Engagement:</strong> Moving from reactive support to proactive 
-                partnership with customers.
+                <p className="mb-2">
+                  <strong>Opportunities come from people, not job listings.</strong> I used to think a good job came from building a great resume and being at the right time at the right moment. But in Silicon Valley, I realized that who you know, how you contribute, and how you position yourself matters just as much as what you know. <strong>Your network is your leverage.</strong>
+                </p>
               </li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-[rgba(23,26,31,1)] mt-8 mb-4">
-              Impact on Business
-            </h2>
-            
-            <p className="mb-12">
-              This mindset transformation led to significant improvements in customer retention, 
-              expansion revenue, and overall customer satisfaction. By adopting Silicon Valley's 
-              approach to CS, we were able to:
+            <p className="mt-8">
+              Being here pushed me to act faster, think bigger, and take bolder risks.
             </p>
-
-            <ul className="list-disc pl-6 space-y-4 mb-12">
-              <li>Reduce Time-to-Value by 40%</li>
-              <li>Increase Net Revenue Retention to over 120%</li>
-              <li>Improve customer satisfaction scores by 25%</li>
-              <li>Build more scalable onboarding processes</li>
-            </ul>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 mt-12">
             <button
               onClick={() => navigate("/stories/cs/learning")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
