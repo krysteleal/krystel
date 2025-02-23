@@ -18,20 +18,16 @@ const SiliconValley = () => {
       <Header />
       <div className="py-20 max-md:py-5 px-20 max-md:px-5 bg-[#ecebe8] flex-grow">
         <div className="max-w-[800px] mx-auto">
-          <h1 className="text-4xl max-md:text-[1.6rem] font-bold text-[rgba(23,26,31,1)] mb-8">
+          <h1 className="text-4xl font-bold text-[rgba(23,26,31,1)] mb-8">
             Moving to Silicon Valley
           </h1>
           
           <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)] mb-12">
-            I moved to California in February 2017. Moving here wasn't always part of my plan. Initially, I came to the Bay Area because of my husband's passion for exploring this ecosystem. At first, I saw it as an opportunity to finally visit San Francisco - a dream trip inspired by my love for the Beat Generation.
+            Moving to Silicon Valley wasn't just about changing locations - it was about immersing myself in the world's most dynamic tech ecosystem. The decision came after years of following the tech industry from afar and realizing that to truly understand how technology was shaping the future, I needed to be at its epicenter.
             <br /><br />
-            But <strong>Silicon Valley is one of those places that changes you the moment you start engaging with it</strong>.
+            The Bay Area offered something unique: a concentration of innovative companies, forward-thinking individuals, and a culture that celebrated both success and failure as learning opportunities.
             <br /><br />
-            I started attending startup events, meeting founders, and immersing myself in the ecosystem. I saw how quickly ideas turned into companies, how ambitious people surrounded themselves with others who pushed them forward. The energy was contagious.
-            <br /><br />
-            As someone who had been freelancing for years and working remotely, being here changed my perspective on growth, networking, and career opportunities. I realized that this was the best place to take my career to the next level.
-            <br /><br />
-            So, what started as curiosity became a long-term commitment to being part of this ecosystem. I knew: I wanted to be here.
+            But beyond the professional opportunities, what drew me here was the mindset. In Silicon Valley, people think big. They're not just solving today's problems - they're imagining and building tomorrow's solutions.
           </p>
 
           <div className="space-y-4">
