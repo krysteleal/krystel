@@ -7,12 +7,6 @@ export const JourneySection: React.FC = () => {
     <section id="journey" className="bg-[rgba(91,116,191,1)] w-full">
       <div className="max-w-[1440px] mx-auto flex flex-col items-center pl-5 pr-20 pt-[77px] pb-[163px] max-md:max-w-full max-md:pr-5 max-md:pb-[100px]">
         <div className="flex w-[945px] max-w-full items-center justify-center gap-5 text-[52px] text-[rgba(243,242,240,1)] font-bold text-center leading-none max-md:text-[40px]">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/8a60f499f4c6a50750f0f7f69f7e94c074124d7fa5e51eba24198f59d1eece95?placeholderIfAbsent=true"
-            className="aspect-[1.01] object-contain w-[72px] shrink-0"
-            alt="Journey icon"
-          />
           <h2 className="max-md:max-w-full max-md:text-[40px]">
             Explore My Journey
           </h2>
