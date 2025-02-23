@@ -44,7 +44,7 @@ export const DigitalProjects = () => {
 
           <div className="space-y-4">
             <button
-              onClick={() => handleOptionClick("/stories/startup/transition")}
+              onClick={() => handleOptionClick("/stories/startup")}
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
