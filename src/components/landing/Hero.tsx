@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="bg-[rgba(243,242,240,1)] z-10 flex mt-[-11px] w-full flex-col items-center justify-center px-20 py-[78px] max-md:mt-0 max-md:px-5 max-md:py-[30px]">
+    <section className="bg-[rgba(243,242,240,1)] z-10 flex mt-[-11px] w-full flex-col items-center justify-center px-20 py-[78px] max-md:mt-0 max-md:px-5 max-md:pt-0 max-md:pb-[30px]">
       <div className="w-full max-w-[1200px] max-md:max-w-full">
         <div className="max-md:max-w-full">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
