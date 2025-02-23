@@ -3,14 +3,14 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import FromFranceToValley from "./pages/stories/FromFranceToValley";
 import CustomerSuccess from "./pages/stories/CustomerSuccess";
 import StartupJourney from "./pages/stories/StartupJourney";
-import DigitalProjects from "./pages/stories/france/DigitalProjects";
-import GrowingUp from "./pages/stories/france/GrowingUp";
+import DigitalProjects from "./pages/stories/europe/DigitalProjects";
+import GrowingUp from "./pages/stories/europe/GrowingUp";
 import SiliconValleyMindset from "./pages/stories/cs/SiliconValleyMindset";
 import Learning from "./pages/stories/cs/Learning";
 import BuildingTeam from "./pages/stories/cs/BuildingTeam";
@@ -18,7 +18,7 @@ import References from "./pages/stories/cs/References";
 import Transition from "./pages/stories/startup/Transition";
 import Networking from "./pages/stories/startup/Networking";
 import ShowWork from "./pages/stories/startup/ShowWork";
-import SiliconValley from "./pages/stories/france/SiliconValley";
+import SiliconValley from "./pages/stories/europe/SiliconValley";
 
 const queryClient = new QueryClient();
 
@@ -30,12 +30,14 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/stories/france" element={<FromFranceToValley />} />
+          {/* Redirect old route to new route */}
+          <Route path="/stories/france" element={<Navigate to="/stories/europe" replace />} />
+          <Route path="/stories/europe" element={<FromFranceToValley />} />
           <Route path="/stories/customer-success" element={<CustomerSuccess />} />
           <Route path="/stories/startup" element={<StartupJourney />} />
-          <Route path="/stories/france/digital-projects" element={<DigitalProjects />} />
-          <Route path="/stories/france/growing-up" element={<GrowingUp />} />
-          <Route path="/stories/france/silicon-valley" element={<SiliconValley />} />
+          <Route path="/stories/europe/digital-projects" element={<DigitalProjects />} />
+          <Route path="/stories/europe/growing-up" element={<GrowingUp />} />
+          <Route path="/stories/europe/silicon-valley" element={<SiliconValley />} />
           <Route path="/stories/cs/silicon-valley-mindset" element={<SiliconValleyMindset />} />
           <Route path="/stories/cs/learning" element={<Learning />} />
           <Route path="/stories/cs/building-team" element={<BuildingTeam />} />
