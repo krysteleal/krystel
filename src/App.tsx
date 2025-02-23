@@ -18,6 +18,7 @@ import References from "./pages/stories/cs/References";
 import Transition from "./pages/stories/startup/Transition";
 import Networking from "./pages/stories/startup/Networking";
 import ShowWork from "./pages/stories/startup/ShowWork";
+import SiliconValley from "./pages/stories/france/SiliconValley";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/stories/startup" element={<StartupJourney />} />
           <Route path="/stories/france/digital-projects" element={<DigitalProjects />} />
           <Route path="/stories/france/growing-up" element={<GrowingUp />} />
+          <Route path="/stories/france/silicon-valley" element={<SiliconValley />} />
           <Route path="/stories/cs/silicon-valley-mindset" element={<SiliconValleyMindset />} />
           <Route path="/stories/cs/learning" element={<Learning />} />
           <Route path="/stories/cs/building-team" element={<BuildingTeam />} />
