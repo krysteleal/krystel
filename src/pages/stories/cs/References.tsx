@@ -2,14 +2,15 @@ import React from "react";
 import { ArrowLeft, Home, ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
+import { NestedFooter } from "@/components/landing/NestedFooter";
 
 const References = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-[#F3F2F0]">
+    <div className="min-h-screen bg-[#F3F2F0] flex flex-col">
       <Header />
-      <div className="py-20 px-20 max-md:px-5">
+      <div className="py-20 max-md:py-5 px-20 max-md:px-5 bg-[#ecebe8] flex-grow">
         <div className="flex justify-between items-center mb-8">
           <button
             onClick={() => navigate(-1)}
@@ -28,7 +29,7 @@ const References = () => {
         </div>
         
         <div className="max-w-[800px] mx-auto">
-          <h1 className="text-4xl font-bold text-[rgba(23,26,31,1)] mb-8">
+          <h1 className="text-4xl max-md:text-[1.6rem] font-bold text-[rgba(23,26,31,1)] mb-8">
             Customer Success References
           </h1>
           
@@ -95,22 +96,8 @@ const References = () => {
           </div>
         </div>
       </div>
-
-      <div className="mt-12 flex justify-between items-center pt-8 border-t border-[rgba(228,226,221,1)]">
-        <button
-          onClick={() => navigate("/stories/cs/building-team")}
-          className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-        >
-          <ChevronLeft className="w-4 h-4" />
-          <span>Building a Team</span>
-        </button>
-        <button
-          onClick={() => navigate("/stories/customer-success")}
-          className="flex items-center gap-2 text-[rgba(91,116,191,1)] hover:opacity-80 transition-opacity"
-        >
-          <span>Back to Customer Success</span>
-          <ChevronRight className="w-4 h-4" />
-        </button>
+      <div className="bg-[#ecebe8]">
+        <NestedFooter />
       </div>
     </div>
   );

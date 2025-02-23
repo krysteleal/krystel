@@ -1,16 +1,16 @@
-
 import React from "react";
 import { ArrowLeft, Home, ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/landing/Header";
+import { NestedFooter } from "@/components/landing/NestedFooter";
 
 const SiliconValleyMindset = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-[#F3F2F0]">
+    <div className="min-h-screen bg-[#F3F2F0] flex flex-col">
       <Header />
-      <div className="py-20 px-20 max-md:px-5">
+      <div className="py-20 max-md:py-5 px-20 max-md:px-5 bg-[#ecebe8] flex-grow">
         <div className="flex justify-between items-center mb-8">
           <button
             onClick={() => navigate(-1)}
@@ -29,7 +29,7 @@ const SiliconValleyMindset = () => {
         </div>
         
         <div className="max-w-[800px] mx-auto">
-          <h1 className="text-4xl font-bold text-[rgba(23,26,31,1)] mb-8">
+          <h1 className="text-4xl max-md:text-[1.6rem] font-bold text-[rgba(23,26,31,1)] mb-8">
             The Silicon Valley Mindset
           </h1>
           
@@ -130,6 +130,9 @@ const SiliconValleyMindset = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="bg-[#ecebe8]">
+        <NestedFooter />
       </div>
     </div>
   );
