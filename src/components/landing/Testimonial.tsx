@@ -16,10 +16,10 @@ const testimonials = [
     image: "https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/9f3b8b7dbb78f8087b2e95b06b45374b88d4abaef399f4c7c2873a25ad90187d"
   },
   {
-    quote: "Working with Krystel has transformed how we approach customer success. Her strategic mindset and ability to execute made an immediate impact on our retention rates.",
-    author: "Jason Lee",
-    company: "Raycon Inc.",
-    image: "https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/9f3b8b7dbb78f8087b2e95b06b45374b88d4abaef399f4c7c2873a25ad90187d"
+    quote: "Working with Krystel felt like having an extension of my own team—her commitment and collaboration went far beyond expectations.",
+    author: "Kyle Bergman",
+    company: "Swoveralls",
+    image: "/lovable-uploads/a7b0aa75-71d5-4d1f-a314-abdda17ce6b1.png"
   },
   {
     quote: "Krystel brings a unique blend of technical expertise and customer empathy. She helped us build processes that scaled with our growth while maintaining the personal touch our customers love.",
