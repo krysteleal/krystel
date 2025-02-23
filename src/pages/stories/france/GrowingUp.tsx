@@ -34,7 +34,7 @@ export const GrowingUp = () => {
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                Tell me about your first digital projects
+                Tell me about your first digital projects and freelance work
               </h3>
               <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
                 Learn about my early experiences with technology and how they shaped my path.

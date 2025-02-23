@@ -1,6 +1,7 @@
 
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { ExternalLink } from "lucide-react";
 import { Header } from "@/components/landing/Header";
 import { NestedFooter } from "@/components/landing/NestedFooter";
 
@@ -72,11 +73,8 @@ export const DigitalProjects = () => {
               className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
-                Why was the Nomadismo Digital Portugal project so important and representative of the "Show Your Work" mentality?
+                Why was the Nomadismo Digital Portugal project so important and representative of the "Show Your Work" mentality <ExternalLink className="inline w-4 h-4 ml-1" />
               </h3>
-              <p className="text-[14px] font-light leading-7 text-[rgba(50,55,67,1)]">
-                Learn how sharing knowledge and building in public became a cornerstone of my career growth.
-              </p>
             </button>
           </div>
         </div>
