@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
                     />
                   </button>
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://linkedin.com/in/krysteleal" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-transparent border-[rgba(91,116,191,1)] text-[rgba(91,116,191,1)] border flex items-stretch gap-[9px] overflow-hidden text-lg font-normal leading-loose px-5 py-[18px] rounded-[10px_10px_10px_0px] border-solid hover:bg-[rgba(91,116,191,0.1)] transition-colors w-fit"

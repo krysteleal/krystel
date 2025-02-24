@@ -1,0 +1,38 @@
+name: Build and Deploy Lovable
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies and Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Rename dist to docs
+        run: |
+          rm -rf docs
+          mv dist docs
+
+      - name: Restore CNAME file
+        run: echo "krys.tel" > docs/CNAME  # Replace with your actual domain!
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update built website"
