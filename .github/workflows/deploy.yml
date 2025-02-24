@@ -31,7 +31,9 @@ jobs:
           mv dist docs
 
       # Commit and Push changes
-      - name: Commit and Push Changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update built website"
+     - name: Commit and Push Changes
+       uses: stefanzweifel/git-auto-commit-action@v5
+       with:
+        commit_message: "chore: update built website"
+        push_options: '--force'
+       token: ${{ secrets.GH_PAT }}
