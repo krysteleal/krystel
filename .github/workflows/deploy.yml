@@ -3,37 +3,30 @@ name: Build and Deploy Lovable
 on:
   push:
     branches:
-      - main  # or your default branch name
+      - main
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # Checkout your repository
       - uses: actions/checkout@v4
-
-      # Setup Node.js environment
+      
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Set your node version here
-
-      # Install dependencies and build
-      - name: Install and Build
+          node-version: '20'
+          
+      - name: Install dependencies and Build
         run: |
           npm install
           npm run build
-
-      # Rename dist folder to docs
+          
       - name: Rename dist to docs
         run: |
           rm -rf docs
           mv dist docs
-
-      # Commit and Push changes
-     - name: Commit and Push Changes
-       uses: stefanzweifel/git-auto-commit-action@v5
-       with:
-        commit_message: "chore: update built website"
-        push_options: '--force'
-       token: ${{ secrets.GH_PAT }}
+          
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update built website"
+          token: ${{ secrets.GH_PAT }}
