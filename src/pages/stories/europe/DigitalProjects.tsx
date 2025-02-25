@@ -23,11 +23,26 @@ const DigitalProjects = () => {
           </h1>
           
           <p className="text-lg font-light leading-7 text-[rgba(50,55,67,1)] mb-12">
-            During my time at Sorbonne University, I started exploring the digital world beyond just using technology. I began creating websites using WordPress, learning about SEO, and understanding how online businesses worked.
+            I still remember when I got my first computer. I shared <a href="https://www.linkedin.com/pulse/tale-my-first-computer-krystel-leal/?trackingId=3s4EBFDBQ3KbVFg6D0SwAQ%3D%3D" className="text-[rgba(91,116,191,1)] hover:underline" target="_blank" rel="noopener noreferrer">my story in this LinkedIn post</a>:
             <br /><br />
-            My first projects were simple - helping small businesses set up their online presence. But each project taught me something new about digital marketing, user experience, and business strategy.
+            <span className="italic border-l-4 border-[rgba(91,116,191,1)] pl-4 block">
+              I remember spending hours reading blogs on Blogger and LiveJournal whenever I was allowed to use the computer. My fascination turned into trying to figure out how they appeared on screen, and that's when I discovered HTML and CSS. That was the beginning of my journey into the web.
+            </span>
+            <br />
+            That early passion for the digital world never left me. I was fascinated by how things appeared on a screen, how people connected through content, and how knowledge spread online.
             <br /><br />
-            By my second year of university, I was making enough money from freelancing to support myself. This experience showed me that there were opportunities beyond traditional career paths.
+            So, when I finished high school in Portugal, pursuing Communication felt like the obvious choice. I was drawn to journalism - I loved language, storytelling, and the ability to shape perspectives. It seemed like the perfect fit.
+            <br /><br />
+            But moving to Paris alone at 19 was more than just starting college - it was a crash course in independence. To support myself, I worked multiple jobs:<br />
+            🥐 At a bakery (a dream for anyone living in Paris!)<br />
+            🍔 Fast food chains<br />
+            📄 Handing out flyers on the street
+            <br /><br />
+            And every night, after long shifts, I'd come home and read about "digital nomads" building businesses online. I realized that the digital skills I had learned as a teenager - HTML, CSS, and content creation - had real value. I started teaching myself WordPress development, became obsessed with SEO, and learned how content was king at the time.
+            <br /><br />
+            By 2014, I was experimenting with freelance platforms, digital marketing, and personal branding.
+            <br /><br />
+            By 2015, I had built a solid portfolio, a steady stream of clients, and was earning more money freelancing than in any job I had before. That's when I made the decision: I wasn't just going to get a job - I was going to build my own career, on my own terms. I became a full-time freelancer.
           </p>
 
           <div className="space-y-4">
