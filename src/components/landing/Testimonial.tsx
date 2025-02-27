@@ -32,6 +32,12 @@ const testimonials = [
     author: "Casey Frankel",
     company: "Caden Lane",
     image: "/lovable-uploads/afa5a644-d914-40cc-b922-cc18715f220e.png"
+  },
+  {
+    quote: "She was a virtual extension of our internal team. She brought insight, recommendations, and brand ownership and kindness daily. I highly recommend her for any company she pursues and that is looking to add a key professional with a true ownership mindset.",
+    author: "Tim Marinello",
+    company: "The Adventure Challenge",
+    image: "/lovable-uploads/4a757c27-6b7c-4ed7-8ac1-ba7c4c210164.png"
   }
 ];
 
