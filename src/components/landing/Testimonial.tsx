@@ -26,6 +26,12 @@ const testimonials = [
     author: "Mandy Rogers",
     company: "OneText",
     image: "/lovable-uploads/b1eeabd4-d227-4860-b586-1461f39edfaf.png"
+  },
+  {
+    quote: "She pays meticulous attention to every detail that comes with working with a multi-faceted team - whether troubleshooting with customer service, reporting metrics, or surprising us with a new idea, Krystel helps bring it all together for the customer. Whenever we had an idea or request, she was quick to translate it into actionable tasks for everyone involved.",
+    author: "Casey Frankel",
+    company: "Caden Lane",
+    image: "/lovable-uploads/afa5a644-d914-40cc-b922-cc18715f220e.png"
   }
 ];
 
