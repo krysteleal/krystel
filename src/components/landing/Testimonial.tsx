@@ -47,7 +47,11 @@ export const Testimonial: React.FC = () => {
       <CarouselContent>
         {testimonials.map((testimonial, index) => (
           <CarouselItem key={index}>
-            <div className="neo-border neo-shadow-lg bg-white p-12 rounded-none relative">
+            <div className={`
+              neo-border neo-shadow-lg 
+              bg-${index % 4 === 0 ? 'neo-pink' : index % 4 === 1 ? 'neo-yellow' : index % 4 === 2 ? 'neo-green' : 'neo-blue'}
+              p-8 rounded-none relative
+            `}>
               <blockquote className="text-neo-black text-lg font-normal leading-relaxed mb-6">
                 "{testimonial.quote}"
               </blockquote>
@@ -59,13 +63,13 @@ export const Testimonial: React.FC = () => {
                 <img
                   loading="lazy"
                   src={`${testimonial.image}?placeholderIfAbsent=true`}
-                  className="aspect-square object-cover w-12 h-12"
+                  className="neo-border aspect-square object-cover w-12 h-12"
                   alt={`${testimonial.author} from ${testimonial.company}`}
                 />
               </div>
+              <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 neo-border bg-white hover:bg-white neo-hover [&>svg]:text-neo-black" />
+              <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 neo-border bg-white hover:bg-white neo-hover [&>svg]:text-neo-black" />
             </div>
-            <CarouselPrevious className="absolute left-8 top-1/2 -translate-y-1/2 neo-border bg-white hover:bg-white neo-hover [&>svg]:text-neo-black" />
-            <CarouselNext className="absolute right-8 top-1/2 -translate-y-1/2 neo-border bg-white hover:bg-white neo-hover [&>svg]:text-neo-black" />
           </CarouselItem>
         ))}
       </CarouselContent>

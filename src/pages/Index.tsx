@@ -14,7 +14,7 @@ const Index = () => {
         <main>
           <Hero />
           <div className="py-16 px-8">
-            <h2 className="text-4xl font-vt323 font-bold mb-8 text-neo-black neo-border neo-shadow bg-neo-pink inline-block px-6 py-2 transform -rotate-1">Testimonials</h2>
+            <h2 className="text-4xl font-vt323 font-bold mb-8 text-neo-black">Testimonials</h2>
             <Testimonial />
           </div>
         </main>
