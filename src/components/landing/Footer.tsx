@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[rgba(228,226,221,0.44)] flex w-full items-stretch gap-5 flex-wrap justify-between px-20 py-[39px] max-md:px-5">
+    <footer className="bg-white flex w-full items-stretch gap-5 flex-wrap justify-between px-20 py-[39px] max-md:max-w-full max-md:px-5">
       <Link to="/" aria-label="Go to homepage">
         <img
           loading="lazy"

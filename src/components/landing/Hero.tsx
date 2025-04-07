@@ -18,13 +18,13 @@ export const Hero: React.FC = () => {
               </h1>
             </div>
             
-            <div className="neo-border neo-shadow-lg bg-white p-8 transform rotate-1">
+            <div className="p-8">
               <h2 className="font-vt323 text-5xl md:text-6xl font-bold text-neo-black leading-tight">
                 Winning with Customer Success
               </h2>
             </div>
             
-            <div className="neo-border neo-shadow bg-neo-blue p-6 transform -rotate-1">
+            <div className="p-6">
               <p className="text-lg text-neo-black">
                 From freelancing to startups, I'm building customer-first
                 strategies, scaling operations, and turning chaos into growth
@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
           </div>
           
           <div className="w-full md:w-1/2">
-            <div className="neo-border neo-shadow-lg bg-neo-yellow p-4 transform rotate-2">
+            <div className="neo-border neo-shadow-lg bg-neo-yellow p-4">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6e7f8d9f030fd6afb81d2e665d3ff062217ce8bd24f7828e8d697614fb786410?placeholderIfAbsent=true"
