@@ -29,21 +29,26 @@ export const JourneyCard: React.FC<JourneyCardProps> = ({
   };
 
   return (
-    <div className="bg-white neo-border neo-shadow-lg p-6 mb-6">
-      <h3 className="text-xl font-vt323 font-bold mb-4 text-neo-black">
+    <div className="bg-white shadow-[0px_0px_2px_rgba(23,26,31,0.12)] flex grow flex-col text-xs font-normal w-full px-[22px] py-[21px] rounded-[10px] border-[rgba(228,226,221,1)] border-solid border-[3px] max-md:mt-10 max-md:px-5">
+      <h3 className="text-[rgba(91,116,191,1)] text-lg font-bold leading-loose">
         {title}
       </h3>
-      <p className="text-base mb-6 text-neo-black">
+      <p className="text-[rgba(50,55,67,1)] text-[0.875rem] font-[350] leading-5 mt-[11px]">
         {description}
       </p>
       <button 
         onClick={handleStart}
-        className="neo-button bg-neo-pink text-neo-black font-bold w-full flex justify-center items-center gap-2"
+        className="bg-[rgba(91,116,191,1)] border flex w-full flex-col overflow-hidden items-center text-gray-100 whitespace-nowrap leading-loose justify-center mt-[31px] px-[70px] py-1.5 rounded-md border-[rgba(0,0,0,0)] border-solid hover:bg-opacity-90 transition-colors max-md:px-5"
       >
-        <span>Start</span>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
-        </svg>
+        <div className="flex w-[43px] items-stretch gap-0.5">
+          <span className="grow">Start</span>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/f6f3f2b1933e31a7ced4083b80170af165fdccdae90b1e7a2a4cf216906c1dd8?placeholderIfAbsent=true"
+            className="aspect-[1] object-contain w-3 shrink-0 my-auto"
+            alt="Arrow icon"
+          />
+        </div>
       </button>
     </div>
   );
