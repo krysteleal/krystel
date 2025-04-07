@@ -47,28 +47,24 @@ export const Testimonial: React.FC = () => {
       <CarouselContent>
         {testimonials.map((testimonial, index) => (
           <CarouselItem key={index}>
-            <div className={`
-              neo-border neo-shadow-lg 
-              bg-${index % 4 === 0 ? 'neo-pink' : index % 4 === 1 ? 'neo-yellow' : index % 4 === 2 ? 'neo-green' : 'neo-blue'}
-              p-8 rounded-none relative
-            `}>
-              <blockquote className="text-neo-black text-lg font-normal leading-relaxed mb-6">
+            <div className="bg-white flex flex-col items-stretch pt-[31px] pb-[11px] px-16 rounded-[40px_0px_40px_0px] max-md:max-w-full relative">
+              <blockquote className="text-[rgba(50,55,67,1)] text-xs font-normal leading-5 mx-4">
                 "{testimonial.quote}"
               </blockquote>
-              <div className="flex items-center gap-3 mt-6 justify-end">
-                <div className="flex flex-col items-stretch text-right">
-                  <cite className="font-bold not-italic text-neo-black">{testimonial.author}</cite>
-                  <div className="font-normal text-neo-black">{testimonial.company}</div>
+              <div className="flex items-stretch gap-[9px] text-[10px] text-[rgba(23,26,31,1)] leading-[1.6] mt-4 justify-end">
+                <div className="flex flex-col items-stretch">
+                  <cite className="font-bold not-italic">{testimonial.author}</cite>
+                  <div className="font-normal">{testimonial.company}</div>
                 </div>
                 <img
                   loading="lazy"
-                  src={`${testimonial.image}?placeholderIfAbsent=true`}
-                  className="neo-border aspect-square object-cover w-12 h-12"
-                  alt={`${testimonial.author} from ${testimonial.company}`}
+                  srcSet={`${testimonial.image}?placeholderIfAbsent=true&width=100 100w, ${testimonial.image}?placeholderIfAbsent=true&width=200 200w, ${testimonial.image}?placeholderIfAbsent=true&width=400 400w, ${testimonial.image}?placeholderIfAbsent=true&width=800 800w, ${testimonial.image}?placeholderIfAbsent=true&width=1200 1200w, ${testimonial.image}?placeholderIfAbsent=true&width=1600 1600w, ${testimonial.image}?placeholderIfAbsent=true&width=2000 2000w, ${testimonial.image}?placeholderIfAbsent=true`}
+                  className="aspect-[1.67] object-contain w-10 shrink-0 my-auto rounded-xl"
+                  alt="Testimonial author"
                 />
               </div>
-              <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 neo-border bg-white hover:bg-white neo-hover [&>svg]:text-neo-black" />
-              <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 neo-border bg-white hover:bg-white neo-hover [&>svg]:text-neo-black" />
+              <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 border-none hover:bg-transparent [&>svg]:text-[#5b74bf]" variant="ghost" />
+              <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 border-none hover:bg-transparent [&>svg]:text-[#5b74bf]" variant="ghost" />
             </div>
           </CarouselItem>
         ))}
