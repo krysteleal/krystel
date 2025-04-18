@@ -14,7 +14,7 @@ export const JourneyCard: React.FC<JourneyCardProps> = ({
   const navigate = useNavigate();
 
   const handleStart = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0); // Scroll to top before navigation
     switch (title) {
       case "From Europe to Silicon Valley":
         navigate("/stories/france");
@@ -29,7 +29,7 @@ export const JourneyCard: React.FC<JourneyCardProps> = ({
   };
 
   return (
-    <div className="bg-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex grow flex-col text-xs font-normal w-full px-[22px] py-[21px] rounded-[10px] border-2 border-black transform hover:-rotate-1 transition-transform duration-200 max-md:mt-10 max-md:px-5">
+    <div className="bg-white shadow-[0px_0px_2px_rgba(23,26,31,0.12)] flex grow flex-col text-xs font-normal w-full px-[22px] py-[21px] rounded-[10px] border-[rgba(228,226,221,1)] border-solid border-[3px] max-md:mt-10 max-md:px-5">
       <h3 className="text-[rgba(91,116,191,1)] text-lg font-bold leading-loose">
         {title}
       </h3>
@@ -38,7 +38,7 @@ export const JourneyCard: React.FC<JourneyCardProps> = ({
       </p>
       <button 
         onClick={handleStart}
-        className="bg-[rgba(91,116,191,1)] border-2 border-black flex w-full flex-col overflow-hidden items-center text-gray-100 whitespace-nowrap leading-loose justify-center mt-[31px] px-[70px] py-1.5 rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all duration-200 max-md:px-5"
+        className="bg-[rgba(91,116,191,1)] border flex w-full flex-col overflow-hidden items-center text-gray-100 whitespace-nowrap leading-loose justify-center mt-[31px] px-[70px] py-1.5 rounded-md border-[rgba(0,0,0,0)] border-solid hover:bg-opacity-90 transition-colors max-md:px-5"
       >
         <div className="flex w-[43px] items-stretch gap-0.5">
           <span className="grow">Start</span>

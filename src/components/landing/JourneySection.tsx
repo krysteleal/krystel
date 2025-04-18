@@ -4,10 +4,10 @@ import { JourneyCard } from "./JourneyCard";
 
 export const JourneySection: React.FC = () => {
   return (
-    <section id="journey" className="bg-[rgba(91,116,191,1)] w-full border-y-4 border-black">
+    <section id="journey" className="bg-[rgba(91,116,191,1)] w-full">
       <div className="max-w-[1440px] mx-auto flex flex-col items-center pl-5 pr-20 pt-[77px] pb-[163px] max-md:max-w-full max-md:pr-5 max-md:pb-[100px]">
         <div className="flex w-[945px] max-w-full items-center justify-center gap-5 text-[52px] text-[rgba(243,242,240,1)] font-bold text-center leading-none max-md:text-[40px] max-md:text-left">
-          <h2 className="max-md:max-w-full max-md:text-[40px] bg-white text-[rgba(91,116,191,1)] px-6 py-3 rotate-[-1deg] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+          <h2 className="max-md:max-w-full max-md:text-[40px]">
             Explore My Journey
           </h2>
         </div>

@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
             <div className="w-[58%] max-md:w-full max-md:ml-0">
               <div className="flex flex-col self-stretch items-stretch text-lg text-[rgba(50,55,67,1)] my-auto max-md:max-w-full max-md:mt-5">
-                <h1 className="font-normal leading-loose bg-[rgba(91,116,191,1)] text-white inline-block w-fit px-4 py-2 rotate-[-2deg] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <h1 className="font-normal leading-loose">
                   Hello, I'm Krystel!
                 </h1>
                 <h2 className="text-[rgba(23,26,31,1)] text-[64px] font-bold leading-[84px] mt-[13px] max-md:max-w-full max-md:text-[40px] max-md:leading-[48px]">
@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
                 <div className="flex gap-4 mt-[100px] max-md:flex-col max-md:mt-[50px]">
                   <button 
                     onClick={scrollToJourney}
-                    className="bg-[rgba(91,116,191,1)] border-2 border-black flex items-stretch gap-[9px] overflow-hidden text-lg text-gray-100 font-normal leading-loose px-5 py-[18px] rounded-[10px_10px_10px_0px] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all duration-200 w-fit"
+                    className="bg-[rgba(91,116,191,1)] border flex items-stretch gap-[9px] overflow-hidden text-lg text-gray-100 font-normal leading-loose px-5 py-[18px] rounded-[10px_10px_10px_0px] border-[rgba(243,242,240,1)] border-solid hover:bg-opacity-90 transition-colors w-fit"
                   >
                     <span className="grow">Explore my journey</span>
                     <img
@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
                     href="https://linkedin.com/in/krysteleal" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-transparent border-2 border-[rgba(91,116,191,1)] text-[rgba(91,116,191,1)] flex items-stretch gap-[9px] overflow-hidden text-lg font-normal leading-loose px-5 py-[18px] rounded-[10px_10px_10px_0px] shadow-[4px_4px_0px_0px_rgba(91,116,191,1)] hover:shadow-[2px_2px_0px_0px_rgba(91,116,191,1)] hover:-translate-y-1 active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all duration-200 w-fit"
+                    className="bg-transparent border-[rgba(91,116,191,1)] text-[rgba(91,116,191,1)] border flex items-stretch gap-[9px] overflow-hidden text-lg font-normal leading-loose px-5 py-[18px] rounded-[10px_10px_10px_0px] border-solid hover:bg-[rgba(91,116,191,0.1)] transition-colors w-fit"
                   >
                     <span className="grow">Follow me on LinkedIn</span>
                     <img
@@ -57,14 +57,12 @@ export const Hero: React.FC = () => {
               </div>
             </div>
             <div className="w-[42%] ml-5 flex flex-col gap-5 max-md:w-full max-md:ml-0">
-              <div className="border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-[2deg] overflow-hidden rounded-[0px_40px_0px_40px]">
-                <img
-                  loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6e7f8d9f030fd6afb81d2e665d3ff062217ce8bd24f7828e8d697614fb786410?placeholderIfAbsent=true"
-                  className="aspect-[1] object-contain w-full"
-                  alt="Profile"
-                />
-              </div>
+              <img
+                loading="lazy"
+                srcSet="https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6e7f8d9f030fd6afb81d2e665d3ff062217ce8bd24f7828e8d697614fb786410?placeholderIfAbsent=true&width=100 100w, https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6e7f8d9f030fd6afb81d2e665d3ff062217ce8bd24f7828e8d697614fb786410?placeholderIfAbsent=true&width=200 200w, https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6e7f8d9f030fd6afb81d2e665d3ff062217ce8bd24f7828e8d697614fb786410?placeholderIfAbsent=true&width=400 400w, https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6e7f8d9f030fd6afb81d2e665d3ff062217ce8bd24f7828e8d697614fb786410?placeholderIfAbsent=true&width=800 800w, https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6e7f8d9f030fd6afb81d2e665d3ff062217ce8bd24f7828e8d697614fb786410?placeholderIfAbsent=true&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6e7f8d9f030fd6afb81d2e665d3ff062217ce8bd24f7828e8d697614fb786410?placeholderIfAbsent=true&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6e7f8d9f030fd6afb81d2e665d3ff062217ce8bd24f7828e8d697614fb786410?placeholderIfAbsent=true&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/b1cb979bcc2b4677a6d8b00fcde863df/6e7f8d9f030fd6afb81d2e665d3ff062217ce8bd24f7828e8d697614fb786410?placeholderIfAbsent=true"
+                className="aspect-[1] object-contain w-full grow rounded-[0px_40px_0px_40px] max-md:max-w-full max-md:mt-10"
+                alt="Profile"
+              />
               <Testimonial />
             </div>
           </div>
