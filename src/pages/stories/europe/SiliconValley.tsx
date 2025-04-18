@@ -33,7 +33,7 @@ const SiliconValley = () => {
           <div className="space-y-4">
             <button
               onClick={() => handleNavigate("/stories/startup")}
-              className="w-full text-left p-6 bg-white rounded-lg border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all duration-200"
+              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
                 How did you transition from freelancing to startups?
@@ -45,7 +45,7 @@ const SiliconValley = () => {
 
             <button
               onClick={() => handleNavigate("/stories/cs/silicon-valley-mindset")}
-              className="w-full text-left p-6 bg-white rounded-lg border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all duration-200"
+              className="w-full text-left p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[rgba(228,226,221,1)]"
             >
               <h3 className="text-xl font-semibold text-[rgba(91,116,191,1)] mb-2">
                 How has the Silicon Valley mindset changed your way of thinking?
