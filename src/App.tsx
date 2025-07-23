@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import AIConsulting from "./pages/AIConsulting";
 import FromFranceToValley from "./pages/stories/FromFranceToValley";
 import CustomerSuccess from "./pages/stories/CustomerSuccess";
 import StartupJourney from "./pages/stories/StartupJourney";
@@ -30,6 +31,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/ai-consulting" element={<AIConsulting />} />
           {/* Redirect old routes to new routes */}
           <Route path="/stories/france" element={<Navigate to="/stories/europe" replace />} />
           <Route path="/stories/france/growing-up" element={<Navigate to="/stories/europe/growing-up" replace />} />
